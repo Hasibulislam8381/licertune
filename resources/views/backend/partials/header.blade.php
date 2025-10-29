@@ -40,7 +40,7 @@
                             src="{{ asset(Auth::user()->avatar ?? 'backend/assets/images/profile.jpeg') }}"
                             alt="Header Avatar">
                         <span class="d-none d-xl-inline-block ms-1" key="t-henry"
-                            style="font-size: 16px; color: #000; ">{{ auth()->user()->name }}</span>
+                            style="font-size: 16px; color: #000; ">{{ auth()->user()->name ?? '' }}</span>
                         <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                     </button>
                     <div class="dropdown-menu dropdown-menu-end">

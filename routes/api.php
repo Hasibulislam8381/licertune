@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\Api\Pages\PagesController;
+use App\Http\Controllers\API\TeamApiController;
+use App\Http\Controllers\Web\Backend\OurTeamController;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -10,3 +15,12 @@
 | be assigned to the "api" middleware group. Make something great!
 |
 */
+
+
+Route::prefix('pages')->group(function () {
+    Route::get('/all', [PagesController::class, 'allCms']);
+    Route::get('/{slug}', [PagesController::class, 'getByPageName']);
+});
+Route::prefix('our-team')->group(function () {
+    Route::get('/', [TeamApiController::class, 'index']);
+});

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\OurTeam;
@@ -26,7 +26,7 @@ class TeamApiController extends Controller
                 'id'    => $team->id,
                 'name'  => $translations['name'] ?? $team->name,
                 'bio'   => $translations['bio'] ?? $team->bio,
-                'image' => $team->image ? asset('storage/' . $team->image) : null,
+                'image' => $team->image ? asset($team->image) : null,
                 'status' => $team->status,
             ];
         });

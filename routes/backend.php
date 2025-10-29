@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Web\Backend\BrandCampController;
 use App\Http\Controllers\Web\Backend\CmsController;
 use App\Http\Controllers\Web\Backend\DashboardController;
 use App\Http\Controllers\Web\Backend\OurTeamController;
@@ -20,6 +21,15 @@ Route::prefix('admin')->name('backend.')->middleware(['auth', 'verified'])->grou
         Route::delete('/delete/{id}', 'destroy')->name('destroy');
     });
     Route::controller(OurTeamController::class)->prefix('our_team')->name('our_team.')->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/store', 'store')->name('store');
+        Route::get('/edit/{id}', 'edit')->name('edit');
+        Route::post('/update/{id}', 'update')->name('update');
+        Route::get('/status/{id}', 'status')->name('status');
+        Route::delete('/delete/{id}', 'destroy')->name('destroy');
+    });
+    Route::controller(BrandCampController::class)->prefix('brand_camp')->name('brand_camp.')->group(function () {
         Route::get('/', 'index')->name('index');
         Route::get('/create', 'create')->name('create');
         Route::post('/store', 'store')->name('store');

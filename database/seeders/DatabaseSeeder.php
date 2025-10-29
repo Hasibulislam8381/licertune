@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             DynamicPageSeeder::class,
             CmsSeeder::class,
             OurTeamSeeder::class,
+            BrandCampSeeder::class,
         ]);
     }
 }

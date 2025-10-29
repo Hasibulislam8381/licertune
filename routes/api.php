@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\Api\BrandCampApiController;
 use App\Http\Controllers\Api\Pages\PagesController;
-use App\Http\Controllers\API\TeamApiController;
+use App\Http\Controllers\Api\TeamApiController;
 use App\Http\Controllers\Web\Backend\OurTeamController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,4 +24,7 @@ Route::prefix('pages')->group(function () {
 });
 Route::prefix('our-team')->group(function () {
     Route::get('/', [TeamApiController::class, 'index']);
+});
+Route::prefix('bradcamp')->group(function () {
+    Route::get('/', [BrandCampApiController::class, 'index']);
 });

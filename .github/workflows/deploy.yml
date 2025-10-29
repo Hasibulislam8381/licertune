@@ -19,4 +19,4 @@ jobs:
         with:
           server: ftp.softvencefsd.xyz
           username: licertune@licertune.softvencefsd.xyz
-          password: "softvence_licertune"
+          password: softvence_licertune

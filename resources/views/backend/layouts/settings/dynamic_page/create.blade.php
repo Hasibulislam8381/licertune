@@ -10,9 +10,7 @@
             <h1 class="text-dark fw-bold fs-2">
                 @yield('title' ?? "Dashboard") <small class="text-muted fs-6 fw-normal ms-1"></small>
             </h1>
-            <!--end::Title-->
-
-            <!--begin::Breadcrumb-->
+         
             <ul class="breadcrumb fw-semibold fs-base" style="padding: 0 0 0 5px;">
                 <li class="breadcrumb-item text-muted">
                     <a href="{{ route('admin.dashboard') }}" class="text-muted text-hover-primary">

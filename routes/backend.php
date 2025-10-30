@@ -3,6 +3,7 @@
 use App\Http\Controllers\Web\Backend\BrandCampController;
 use App\Http\Controllers\Web\Backend\CmsController;
 use App\Http\Controllers\Web\Backend\DashboardController;
+use App\Http\Controllers\Web\Backend\FutureFeaturesController;
 use App\Http\Controllers\Web\Backend\OurTeamController;
 use App\Http\Controllers\Web\Backend\SoftwareFeeController;
 use Illuminate\Support\Facades\Route;
@@ -47,5 +48,9 @@ Route::prefix('admin')->name('backend.')->middleware(['auth', 'verified'])->grou
         Route::post('/update/{id}', 'update')->name('update');
         Route::get('/status/{id}', 'status')->name('status');
         Route::delete('/delete/{id}', 'destroy')->name('destroy');
+    });
+    Route::controller(FutureFeaturesController::class)->prefix('future-features')->name('future_features.')->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::post('/update-all', 'updateAll')->name('update-all');
     });
 });

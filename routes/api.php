@@ -34,4 +34,6 @@ Route::prefix('software-fees')->group(function () {
     Route::get('/', [SoftwareFeeApiController::class, 'index']);
 });
 
+Route::get('/future-features', [HomeController::class, 'getAllFutureFeature']);
+
 Route::post('/submit-form', [HomeController::class, 'submitForm']);

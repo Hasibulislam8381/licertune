@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Mail\ContactFormMail;
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use App\Models\FutureFeatures;
 use App\Traits\ApiResponse;
 use Illuminate\Support\Facades\Mail;
 
@@ -31,6 +32,31 @@ class HomeController extends Controller
                 'Something went wrong: ' . $e->getMessage(),
                 500
             );
+        }
+    }
+
+
+    public function getAllFutureFeature()
+    {
+        try {
+            $features = FutureFeatures::all()->map(function ($feature) {
+                return [
+                    'id' => $feature->id,
+                    'title' => $feature->title,
+                    'image' => $feature->image ? asset($feature->image) : null,
+                    'features' => $feature->features ? explode(',', $feature->features) : [],
+                ];
+            });
+
+            return response()->json([
+                'success' => true,
+                'data' => $features
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'success' => false,
+                'message' => $e->getMessage() ?: 'Could not fetch features'
+            ], 500);
         }
     }
 }

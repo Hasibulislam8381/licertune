@@ -38,28 +38,48 @@ class BrandCampSeeder extends Seeder
                 ],
             ],
             [
-                'page_name' => 'contact Us',
+                'page_name' => 'Contact Us',
                 'slug' => 'contact-us',
                 'image' => 'uploads/brandcamp/17617362431736524409.jpg',
-                'translations' => []
+                'translations' => [
+                    'en' => ['title' => 'Contact Us'],
+                    'fr' => ['title' => 'Contactez-nous'],
+                    'it' => ['title' => 'Contattaci'],
+                    'de' => ['title' => 'Kontaktieren Sie uns'],
+                ],
             ],
             [
                 'page_name' => 'About Us',
                 'slug' => 'about-us',
                 'image' => 'uploads/brandcamp/17617362431736524409.jpg',
-                'translations' => []
+                'translations' => [
+                    'en' => ['title' => 'About Us'],
+                    'fr' => ['title' => 'À propos de nous'],
+                    'it' => ['title' => 'Chi siamo'],
+                    'de' => ['title' => 'Über uns'],
+                ],
             ],
             [
                 'page_name' => 'Pricing',
                 'slug' => 'pricing',
                 'image' => 'uploads/brandcamp/17617362431736524409.jpg',
-                'translations' => []
+                'translations' => [
+                    'en' => ['title' => 'Pricing'],
+                    'fr' => ['title' => 'Tarification'],
+                    'it' => ['title' => 'Prezzi'],
+                    'de' => ['title' => 'Preise'],
+                ],
             ],
             [
                 'page_name' => 'Our Product',
                 'slug' => 'our-product',
                 'image' => 'uploads/brandcamp/17617362431736524409.jpg',
-                'translations' => []
+                'translations' => [
+                    'en' => ['title' => 'Our Product'],
+                    'fr' => ['title' => 'Notre produit'],
+                    'it' => ['title' => 'Il nostro prodotto'],
+                    'de' => ['title' => 'Unser Produkt'],
+                ],
             ],
             // আরও pages চাইলে এখানে add করতে পারো
             // [

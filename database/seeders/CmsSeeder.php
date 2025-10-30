@@ -537,6 +537,353 @@ class CmsSeeder extends Seeder
                     ],
                 ],
             ],
+            // Main Section: Our Product
+            [
+                'page_name' => 'Our Product',
+                'slug' => 'our-product',
+                'section_name' => 'main_section',
+                'image' => null,
+                'btn_text' => '',
+                'btn_url' => '#',
+                'status' => 1,
+                'translations' => [
+                    'en' => [
+                        'title' => 'Roadmap at a glance',
+                        'description' => "To empower knowledge-driven organizations by providing a secure and intelligent AI assistant that transforms corporate data into actionable insights, fostering efficiency and innovation with unwavering trust and data privacy."
+                    ],
+                    'fr' => [
+                        'title' => 'Feuille de route en un coup d’œil',
+                        'description' => "Donner les moyens aux organisations axées sur la connaissance grâce à un assistant IA sécurisé et intelligent qui transforme les données d’entreprise en informations exploitables, favorisant l’efficacité et l’innovation avec une confiance et une confidentialité inébranlables."
+                    ],
+                    'it' => [
+                        'title' => 'Tabella di marcia a colpo d’occhio',
+                        'description' => "Potenziare le organizzazioni basate sulla conoscenza fornendo un assistente AI sicuro e intelligente che trasforma i dati aziendali in informazioni utilizzabili, promuovendo efficienza e innovazione con fiducia e privacy dei dati incrollabili."
+                    ],
+                    'de' => [
+                        'title' => 'Fahrplan auf einen Blick',
+                        'description' => "Wissensgetriebene Organisationen stärken, indem ein sicherer und intelligenter KI-Assistent bereitgestellt wird, der Unternehmensdaten in umsetzbare Erkenntnisse verwandelt – und Effizienz sowie Innovation mit unerschütterlichem Vertrauen und Datenschutz fördert."
+                    ],
+                ],
+            ],
+
+            // MVP Section
+            [
+                'page_name' => 'Our Product',
+                'slug' => 'our-product',
+                'section_name' => 'mvp_section',
+                'image' => 'uploads/cms/17618122301377063983.jpg',
+                'btn_text' => '',
+                'btn_url' => '#',
+                'status' => 1,
+                'translations' => [
+                    'en' => [
+                        'title' => 'MVP - Ready NOW',
+                        'description' => "Our current product is ready for you to use and includes chat functionality, table-based analysis, and advanced security with strict compliance controls."
+                    ],
+                    'fr' => [
+                        'title' => 'MVP - Prêt MAINTENANT',
+                        'description' => "Notre produit actuel est prêt à être utilisé et inclut des fonctionnalités de chat, une analyse basée sur des tableaux et une sécurité avancée avec des contrôles de conformité stricts."
+                    ],
+                    'it' => [
+                        'title' => 'MVP - Pronto ORA',
+                        'description' => "Il nostro prodotto attuale è pronto per l’uso e include funzionalità di chat, analisi basata su tabelle e sicurezza avanzata con rigorosi controlli di conformità."
+                    ],
+                    'de' => [
+                        'title' => 'MVP - Jetzt bereit',
+                        'description' => "Unser aktuelles Produkt ist einsatzbereit und umfasst Chat-Funktionen, tabellenbasierte Analysen sowie erweiterte Sicherheit mit strengen Compliance-Kontrollen."
+                    ],
+                ],
+            ],
+
+            // V1 Section
+            [
+                'page_name' => 'Our Product',
+                'slug' => 'our-product',
+                'section_name' => 'v1_section',
+                'image' => 'uploads/cms/1761812505110249280.png',
+                'btn_text' => '',
+                'btn_url' => '#',
+                'status' => 1,
+                'translations' => [
+                    'en' => [
+                        'title' => 'V1',
+                        'description' => "We will introduce shared workspaces for real-time collaboration, comprehensive reporting, and a smart template library to streamline your workflows."
+                    ],
+                    'fr' => [
+                        'title' => 'V1',
+                        'description' => "Nous introduirons des espaces de travail partagés pour la collaboration en temps réel, des rapports complets et une bibliothèque de modèles intelligents pour rationaliser vos flux de travail."
+                    ],
+                    'it' => [
+                        'title' => 'V1',
+                        'description' => "Introdurremo spazi di lavoro condivisi per la collaborazione in tempo reale, report completi e una libreria di modelli intelligenti per semplificare i tuoi flussi di lavoro."
+                    ],
+                    'de' => [
+                        'title' => 'V1',
+                        'description' => "Wir werden gemeinsame Arbeitsbereiche für die Zusammenarbeit in Echtzeit, umfassendes Reporting und eine intelligente Vorlagenbibliothek einführen, um Ihre Arbeitsabläufe zu optimieren."
+                    ],
+                ],
+            ],
+            // Future Enhancements Section
+            [
+                'page_name' => 'Our Product',
+                'slug' => 'our-product',
+                'section_name' => 'future_enhancements_section',
+                'image' => 'uploads/cms/17618125881214229311.png',
+                'btn_text' => '',
+                'btn_url' => '#',
+                'status' => 1,
+                'translations' => [
+                    'en' => [
+                        'title' => 'Future Enhancements',
+                        'description' => "Future versions will focus on even greater analytical depth and the ability for customers to create and manage their own custom templates."
+                    ],
+                    'fr' => [
+                        'title' => 'Améliorations Futures',
+                        'description' => "Les versions futures se concentreront sur une profondeur analytique encore plus grande et sur la possibilité pour les clients de créer et de gérer leurs propres modèles personnalisés."
+                    ],
+                    'it' => [
+                        'title' => 'Miglioramenti Futuri',
+                        'description' => "Le versioni future si concentreranno su una maggiore profondità analitica e sulla possibilità per i clienti di creare e gestire i propri modelli personalizzati."
+                    ],
+                    'de' => [
+                        'title' => 'Zukünftige Erweiterungen',
+                        'description' => "Zukünftige Versionen werden sich auf eine noch größere analytische Tiefe und die Möglichkeit konzentrieren, dass Kunden ihre eigenen benutzerdefinierten Vorlagen erstellen und verwalten können."
+                    ],
+                ],
+            ],
+            // Main Section: Future Features - Core Integration
+            [
+                'page_name' => 'Our Product',
+                'slug' => 'our-product',
+                'section_name' => 'future_features_core_integration_main',
+                'image' => null,
+                'btn_text' => '',
+                'btn_url' => '#',
+                'status' => 1,
+                'translations' => [
+                    'en' => [
+                        'title' => 'Future Features: Core Integration',
+                        'description' => 'Upcoming core capabilities designed to ensure deep integration with your existing enterprise systems for seamless collaboration and secure operations.',
+                    ],
+                    'fr' => [
+                        'title' => 'Fonctionnalités Futures : Intégration Principale',
+                        'description' => 'Fonctionnalités principales à venir conçues pour garantir une intégration profonde avec vos systèmes d’entreprise existants, favorisant une collaboration fluide et une sécurité optimale.',
+                    ],
+                    'it' => [
+                        'title' => 'Funzionalità Future: Integrazione Core',
+                        'description' => 'Prossime funzionalità principali progettate per garantire un’integrazione profonda con i sistemi aziendali esistenti per una collaborazione fluida e sicura.',
+                    ],
+                    'de' => [
+                        'title' => 'Zukünftige Funktionen: Kernintegration',
+                        'description' => 'Künftige Kernfunktionen, die eine tiefgehende Integration mit Ihren bestehenden Unternehmenssystemen für nahtlose Zusammenarbeit und sichere Abläufe gewährleisten.',
+                    ],
+                ],
+            ],
+
+            // Sub-section 1: DMS Integration
+            [
+                'page_name' => 'Our Product',
+                'slug' => 'our-product',
+                'section_name' => 'future_features_dms_integration',
+                'image' => null,
+                'btn_text' => '',
+                'btn_url' => '#',
+                'status' => 1,
+                'translations' => [
+                    'en' => [
+                        'title' => 'DMS Integration',
+                        'description' => "Seamless integration with customer's own Document Management System (DMS).",
+                    ],
+                    'fr' => [
+                        'title' => 'Intégration DMS',
+                        'description' => "Intégration transparente avec le propre système de gestion documentaire (DMS) du client.",
+                    ],
+                    'it' => [
+                        'title' => 'Integrazione DMS',
+                        'description' => "Integrazione perfetta con il sistema di gestione documentale (DMS) del cliente.",
+                    ],
+                    'de' => [
+                        'title' => 'DMS-Integration',
+                        'description' => "Nahtlose Integration mit dem eigenen Dokumentenmanagementsystem (DMS) des Kunden.",
+                    ],
+                ],
+            ],
+
+            // Sub-section 2: Secure Data Access
+            [
+                'page_name' => 'Our Product',
+                'slug' => 'our-product',
+                'section_name' => 'future_features_secure_data_access',
+                'image' => null,
+                'btn_text' => '',
+                'btn_url' => '#',
+                'status' => 1,
+                'translations' => [
+                    'en' => [
+                        'title' => 'Secure Data Access',
+                        'description' => "Secure data access and indexing with your own infrastructure.",
+                    ],
+                    'fr' => [
+                        'title' => 'Accès Sécurisé aux Données',
+                        'description' => "Accès sécurisé aux données et indexation via votre propre infrastructure.",
+                    ],
+                    'it' => [
+                        'title' => 'Accesso Sicuro ai Dati',
+                        'description' => "Accesso e indicizzazione sicuri dei dati tramite la tua infrastruttura.",
+                    ],
+                    'de' => [
+                        'title' => 'Sicherer Datenzugriff',
+                        'description' => "Sicherer Datenzugriff und Indexierung mit Ihrer eigenen Infrastruktur.",
+                    ],
+                ],
+            ],
+
+            // Sub-section 3: Single Source of Truth
+            [
+                'page_name' => 'Our Product',
+                'slug' => 'our-product',
+                'section_name' => 'future_features_single_source_of_truth',
+                'image' => null,
+                'btn_text' => '',
+                'btn_url' => '#',
+                'status' => 1,
+                'translations' => [
+                    'en' => [
+                        'title' => 'Single Source of Truth',
+                        'description' => "Single source of truth for enterprise documents using your own infrastructure.",
+                    ],
+                    'fr' => [
+                        'title' => 'Source Unique de Vérité',
+                        'description' => "Source unique de vérité pour les documents d’entreprise utilisant votre propre infrastructure.",
+                    ],
+                    'it' => [
+                        'title' => 'Fonte Unica di Verità',
+                        'description' => "Fonte unica di verità per i documenti aziendali utilizzando la tua infrastruttura.",
+                    ],
+                    'de' => [
+                        'title' => 'Einzige Wahrheitsquelle',
+                        'description' => "Einzige Quelle der Wahrheit für Unternehmensdokumente mit Ihrer eigenen Infrastruktur.",
+                    ],
+                ],
+            ],
+
+            // Sub-section 4: Office Integration
+            [
+                'page_name' => 'Our Product',
+                'slug' => 'our-product',
+                'section_name' => 'future_features_office_integration',
+                'image' => null,
+                'btn_text' => '',
+                'btn_url' => '#',
+                'status' => 1,
+                'translations' => [
+                    'en' => [
+                        'title' => 'Office Integration',
+                        'description' => "Integration with your in-house Office solution for templating and document generation.",
+                    ],
+                    'fr' => [
+                        'title' => 'Intégration Office',
+                        'description' => "Intégration avec votre solution Office interne pour la création de modèles et la génération de documents.",
+                    ],
+                    'it' => [
+                        'title' => 'Integrazione Office',
+                        'description' => "Integrazione con la tua soluzione Office interna per la creazione di modelli e la generazione di documenti.",
+                    ],
+                    'de' => [
+                        'title' => 'Office-Integration',
+                        'description' => "Integration mit Ihrer internen Office-Lösung für Vorlagenerstellung und Dokumentengenerierung.",
+                    ],
+                ],
+            ],
+
+            // Main Section: Our Solution, Your Way
+            [
+                'page_name' => 'Our Product',
+                'slug' => 'our-product',
+                'section_name' => 'our_solution_main',
+                'image' => null,
+                'btn_text' => '',
+                'btn_url' => '#',
+                'status' => 1,
+                'translations' => [
+                    'en' => [
+                        'title' => 'Our Solution, Your Way',
+                        'description' => "We believe a product should evolve to fit your needs, not the other way around. We're committed to building a platform that's the perfect fit for your organization.",
+                    ],
+                    'fr' => [
+                        'title' => 'Notre Solution, À Votre Façon',
+                        'description' => "Nous croyons qu’un produit doit évoluer pour répondre à vos besoins, et non l’inverse. Nous nous engageons à construire une plateforme parfaitement adaptée à votre organisation.",
+                    ],
+                    'it' => [
+                        'title' => 'La Nostra Soluzione, a Modo Tuo',
+                        'description' => "Crediamo che un prodotto debba evolversi per adattarsi alle tue esigenze, e non il contrario. Ci impegniamo a costruire una piattaforma perfetta per la tua organizzazione.",
+                    ],
+                    'de' => [
+                        'title' => 'Unsere Lösung, Ihr Weg',
+                        'description' => "Wir glauben, dass ein Produkt sich an Ihre Bedürfnisse anpassen sollte, nicht umgekehrt. Wir verpflichten uns, eine Plattform zu entwickeln, die perfekt zu Ihrer Organisation passt.",
+                    ],
+                ],
+            ],
+
+            // Sub-section 1: Tell us about your challenges
+            [
+                'page_name' => 'Our Product',
+                'slug' => 'our-product',
+                'section_name' => 'our_solution_challenges',
+                'image' => null,
+                'btn_text' => '',
+                'btn_url' => '#',
+                'status' => 1,
+                'translations' => [
+                    'en' => [
+                        'title' => 'Tell us about your challenges',
+                        'description' => "We are here to understand your most complex workflows and learn how our platform can evolve to meet your specific needs.",
+                    ],
+                    'fr' => [
+                        'title' => 'Parlez-nous de vos défis',
+                        'description' => "Nous sommes là pour comprendre vos flux de travail les plus complexes et voir comment notre plateforme peut évoluer pour répondre à vos besoins spécifiques.",
+                    ],
+                    'it' => [
+                        'title' => 'Raccontaci le tue sfide',
+                        'description' => "Siamo qui per comprendere i tuoi flussi di lavoro più complessi e capire come la nostra piattaforma possa evolversi per soddisfare le tue esigenze specifiche.",
+                    ],
+                    'de' => [
+                        'title' => 'Erzählen Sie uns von Ihren Herausforderungen',
+                        'description' => "Wir möchten Ihre komplexesten Workflows verstehen und herausfinden, wie unsere Plattform sich entwickeln kann, um Ihre spezifischen Anforderungen zu erfüllen.",
+                    ],
+                ],
+            ],
+
+            // Sub-section 2: Help us refine our solution
+            [
+                'page_name' => 'Our Product',
+                'slug' => 'our-product',
+                'section_name' => 'our_solution_refine',
+                'image' => null,
+                'btn_text' => '',
+                'btn_url' => '#',
+                'status' => 1,
+                'translations' => [
+                    'en' => [
+                        'title' => 'Help us refine our solution',
+                        'description' => "We'll work with you to ensure our product integrates seamlessly into your current ecosystem, transforming your corporate data into actionable insights for everyone.",
+                    ],
+                    'fr' => [
+                        'title' => 'Aidez-nous à affiner notre solution',
+                        'description' => "Nous travaillerons avec vous pour garantir que notre produit s’intègre parfaitement à votre écosystème actuel, transformant vos données d’entreprise en informations exploitables pour tous.",
+                    ],
+                    'it' => [
+                        'title' => 'Aiutaci a perfezionare la nostra soluzione',
+                        'description' => "Lavoreremo con te per garantire che il nostro prodotto si integri perfettamente nel tuo ecosistema attuale, trasformando i dati aziendali in informazioni utili per tutti.",
+                    ],
+                    'de' => [
+                        'title' => 'Helfen Sie uns, unsere Lösung zu verfeinern',
+                        'description' => "Wir arbeiten mit Ihnen zusammen, um sicherzustellen, dass unser Produkt nahtlos in Ihr aktuelles Ökosystem integriert wird und Ihre Unternehmensdaten für alle in umsetzbare Erkenntnisse verwandelt.",
+                    ],
+                ],
+            ],
+
+
 
         ];
 

@@ -11,8 +11,8 @@ class BrandCampSeeder extends Seeder
     {
         $pages = [
             [
-                'page_name' => 'about_us',
-                'slug' => 'about-us',
+                'page_name' => 'Home Page',
+                'slug' => 'home-page',
                 'image' => 'uploads/brandcamp/17617362431736524409.jpg',
                 'translations' => [
                     'en' => [
@@ -40,6 +40,24 @@ class BrandCampSeeder extends Seeder
             [
                 'page_name' => 'contact Us',
                 'slug' => 'contact-us',
+                'image' => 'uploads/brandcamp/17617362431736524409.jpg',
+                'translations' => []
+            ],
+            [
+                'page_name' => 'About Us',
+                'slug' => 'about-us',
+                'image' => 'uploads/brandcamp/17617362431736524409.jpg',
+                'translations' => []
+            ],
+            [
+                'page_name' => 'Pricing',
+                'slug' => 'pricing',
+                'image' => 'uploads/brandcamp/17617362431736524409.jpg',
+                'translations' => []
+            ],
+            [
+                'page_name' => 'Our Product',
+                'slug' => 'our-product',
                 'image' => 'uploads/brandcamp/17617362431736524409.jpg',
                 'translations' => []
             ],

@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\Api\BrandCampApiController;
+use App\Http\Controllers\Api\HomeController;
 use App\Http\Controllers\Api\Pages\PagesController;
+use App\Http\Controllers\Api\SoftwareFeeApiController;
 use App\Http\Controllers\Api\TeamApiController;
 use App\Http\Controllers\Web\Backend\OurTeamController;
 use Illuminate\Support\Facades\Route;
@@ -28,3 +30,8 @@ Route::prefix('our-team')->group(function () {
 Route::prefix('bradcamp')->group(function () {
     Route::get('/', [BrandCampApiController::class, 'index']);
 });
+Route::prefix('software-fees')->group(function () {
+    Route::get('/', [SoftwareFeeApiController::class, 'index']);
+});
+
+Route::post('/submit-form', [HomeController::class, 'submitForm']);

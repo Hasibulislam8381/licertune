@@ -29,10 +29,7 @@
             <div class="col-lg-12">
                 <div class="p-3 card">
                     <div class="card-style mb-30">
-                        <div class="mb-4 d-flex justify-content-start">
-                            <a href="{{ route('backend.brand_camp.create') }}" class="btn btn-primary btn-lg">Add New
-                                Section</a>
-                        </div>
+
                         <div class="table-wrapper table-responsive">
                             <table id="data-table" class="table">
                                 <thead>

@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             CmsSeeder::class,
             OurTeamSeeder::class,
             BrandCampSeeder::class,
+            SoftwareFeeSeeder::class,
         ]);
     }
 }

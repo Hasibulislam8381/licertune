@@ -48,7 +48,7 @@ class BrandCampController extends Controller
                 ->addColumn('action', function ($d) {
                     return '<div class="btn-group btn-group-md">
             <a href="' . route('backend.brand_camp.edit', $d->id) . '" class="btn btn-primary btn-xl" title="Edit">Edit</a>
-            <a href="#" onclick="showDeleteConfirm(' . $d->id . ')" class="btn btn-danger btn-xl" title="Delete">Delete</a>
+
         </div>';
                 })
                 ->rawColumns(['image', 'status', 'action'])

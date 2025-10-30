@@ -42,10 +42,68 @@ class PagesController extends Controller
     /**
      * Fetch a single CMS page by slug
      */
+    // public function getByPageName(Request $request, $slug)
+    // {
+    //     try {
+    //         $cmsSections = Cms::with('translations')->where('slug', $slug)->get();
+
+    //         if ($cmsSections->isEmpty()) {
+    //             throw new \Exception('CMS section not found.');
+    //         }
+
+    //         $defaultLang = 'en';
+    //         $lang = $request->get('language', $defaultLang);
+
+    //         $data = $cmsSections->map(function ($cms) use ($lang) {
+    //             $translations = [];
+    //             foreach ($cms->translations as $t) {
+    //                 $translations[$t->language][$t->field] = $t->value;
+    //             }
+
+    //             // language filter
+    //             $filteredTranslations = isset($translations[$lang]) ? $translations[$lang] : [];
+
+    //             return [
+    //                 'id' => $cms->id,
+    //                 'page_name' => $cms->page_name,
+    //                 'slug' => $cms->slug,
+    //                 'section_name' => $cms->section_name,
+    //                 'image' => $cms->image ? asset($cms->image) : null,
+    //                 'bg_image' => $cms->bg_image ? asset($cms->bg_image) : null,
+    //                 'btn_text' => $cms->btn_text,
+    //                 'btn_url' => $cms->btn_url,
+    //                 'status' => $cms->status,
+    //                 'translations' => $filteredTranslations
+    //             ];
+    //         });
+
+    //         return response()->json([
+    //             'success' => true,
+    //             'data' => $data
+    //         ]);
+    //     } catch (\Exception $e) {
+    //         return response()->json([
+    //             'success' => false,
+    //             'message' => 'CMS page not found.'
+    //         ], 404);
+    //     }
+    // }
     public function getByPageName(Request $request, $slug)
     {
         try {
-            $cmsSections = Cms::with('translations')->where('slug', $slug)->get();
+            // তিনটা fixed slug define করলাম
+            $groupSlugs = ['problem-section', 'mission-section', 'solution-section'];
+
+            // যদি request-এর slug এই তিনটার মধ্যে কোনো একটা হয়
+            if (in_array($slug, $groupSlugs)) {
+                $slugsToFetch = $groupSlugs;
+            } else {
+                $slugsToFetch = [$slug];
+            }
+
+            $cmsSections = Cms::with('translations')
+                ->whereIn('slug', $slugsToFetch)
+                ->get();
 
             if ($cmsSections->isEmpty()) {
                 throw new \Exception('CMS section not found.');
@@ -60,8 +118,7 @@ class PagesController extends Controller
                     $translations[$t->language][$t->field] = $t->value;
                 }
 
-                // language filter
-                $filteredTranslations = isset($translations[$lang]) ? $translations[$lang] : [];
+                $filteredTranslations = $translations[$lang] ?? [];
 
                 return [
                     'id' => $cms->id,
@@ -75,7 +132,7 @@ class PagesController extends Controller
                     'status' => $cms->status,
                     'translations' => $filteredTranslations
                 ];
-            });
+            })->values();
 
             return response()->json([
                 'success' => true,

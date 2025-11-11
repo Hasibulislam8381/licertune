@@ -37,3 +37,5 @@ Route::prefix('software-fees')->group(function () {
 Route::get('/future-features', [HomeController::class, 'getAllFutureFeature']);
 
 Route::post('/submit-form', [HomeController::class, 'submitForm']);
+Route::get('/get-menu', [HomeController::class, 'getMenu']);
+Route::get('/dynamic-pages/{slug}', [HomeController::class, 'getDynamicPage']);

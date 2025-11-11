@@ -83,30 +83,62 @@ class DynamicPageController extends Controller
      * @param Request $request
      * @return RedirectResponse
      */
+    // public function store(Request $request): RedirectResponse
+    // {
+    //     try {
+    //         if (User::find(auth()->user()->id)) {
+    //             $validator = Validator::make($request->all(), [
+    //                 'page_title'   => 'required|string',
+    //                 'page_content' => 'required|string',
+    //             ]);
+
+    //             if ($validator->fails()) {
+    //                 return redirect()->back()->withErrors($validator)->withInput();
+    //             }
+
+    //             $data               = new DynamicPage();
+    //             $data->page_title   = $request->page_title;
+    //             $data->page_slug    = Str::slug($request->page_title);
+    //             $data->page_content = $request->page_content;
+    //             $data->save();
+    //         }
+    //         return redirect()->route('dynamic_page.index')->with('t-success', 'Dynamic Page created successfully.');
+    //     } catch (Exception) {
+    //         return redirect()->route('dynamic_page.index')->with('t-error', 'Dynamic Page failed created.');
+    //     }
+    // }
     public function store(Request $request): RedirectResponse
     {
         try {
-            if (User::find(auth()->user()->id)) {
-                $validator = Validator::make($request->all(), [
-                    'page_title'   => 'required|string',
-                    'page_content' => 'required|string',
-                ]);
+            $validator = Validator::make($request->all(), [
+                'translations.*.page_title'   => 'required|string',
+                'translations.*.page_content' => 'required|string',
+            ]);
 
-                if ($validator->fails()) {
-                    return redirect()->back()->withErrors($validator)->withInput();
-                }
-
-                $data               = new DynamicPage();
-                $data->page_title   = $request->page_title;
-                $data->page_slug    = Str::slug($request->page_title);
-                $data->page_content = $request->page_content;
-                $data->save();
+            if ($validator->fails()) {
+                return redirect()->back()->withErrors($validator)->withInput();
             }
-            return redirect()->route('dynamic_page.index')->with('t-success', 'Dynamic Page created successfully.');
-        } catch (Exception) {
-            return redirect()->route('dynamic_page.index')->with('t-error', 'Dynamic Page failed created.');
+
+            $page = DynamicPage::create([
+                'status' => 'active',
+            ]);
+
+            foreach ($request->translations as $locale => $data) {
+                $page->translations()->create([
+                    'locale' => $locale,
+                    'page_title' => $data['page_title'],
+                    'page_content' => $data['page_content'],
+                ]);
+            }
+
+            return redirect()->route('dynamic_page.index')
+                ->with('t-success', 'Dynamic Page created successfully.');
+        } catch (Exception $e) {
+            return redirect()->route('dynamic_page.index')
+                ->with('t-error', 'Dynamic Page creation failed.');
         }
     }
+
 
     /**
      * Show the form for editing the specified dynamic page.
@@ -130,33 +162,51 @@ class DynamicPageController extends Controller
      * @param int $id
      * @return RedirectResponse
      */
+    // public function update(Request $request, int $id): RedirectResponse
+    // {
+    //     try {
+    //         if (User::find(auth()->user()->id)) {
+    //             $validator = Validator::make($request->all(), [
+    //                 'page_title'   => 'nullable|string',
+    //                 'page_content' => 'nullable|string',
+    //             ]);
+
+    //             if ($validator->fails()) {
+    //                 return redirect()->back()->withErrors($validator)->withInput();
+    //             }
+
+    //             $data = DynamicPage::findOrFail($id);
+    //             $data->update([
+    //                 'page_title'   => $request->page_title,
+    //                 'page_slug'    => Str::slug($request->page_title),
+    //                 'page_content' => $request->page_content,
+    //             ]);
+
+    //             return redirect()->route('dynamic_page.index')->with('t-success', 'Dynamic Page Updated Successfully.');
+    //         }
+    //     } catch (Exception) {
+    //         return redirect()->route('dynamic_page.index')->with('t-error', 'Dynamic Page failed to update');
+    //     }
+    //     return redirect()->route('dynamic_page.index');
+    // }
     public function update(Request $request, int $id): RedirectResponse
     {
-        try {
-            if (User::find(auth()->user()->id)) {
-                $validator = Validator::make($request->all(), [
-                    'page_title'   => 'nullable|string',
-                    'page_content' => 'nullable|string',
-                ]);
+        $page = DynamicPage::findOrFail($id);
 
-                if ($validator->fails()) {
-                    return redirect()->back()->withErrors($validator)->withInput();
-                }
-
-                $data = DynamicPage::findOrFail($id);
-                $data->update([
-                    'page_title'   => $request->page_title,
-                    'page_slug'    => Str::slug($request->page_title),
-                    'page_content' => $request->page_content,
-                ]);
-
-                return redirect()->route('dynamic_page.index')->with('t-success', 'Dynamic Page Updated Successfully.');
-            }
-        } catch (Exception) {
-            return redirect()->route('dynamic_page.index')->with('t-error', 'Dynamic Page failed to update');
+        foreach ($request->translations as $locale => $data) {
+            $page->translations()->updateOrCreate(
+                ['locale' => $locale],
+                [
+                    'page_title' => $data['page_title'],
+                    'page_content' => $data['page_content'],
+                ]
+            );
         }
-        return redirect()->route('dynamic_page.index');
+
+        return redirect()->route('dynamic_page.index')->with('t-success', 'Dynamic Page Updated Successfully.');
     }
+
+
 
     /**
      * Change the status of the specified dynamic page.

@@ -13,7 +13,8 @@ class BrandCampSeeder extends Seeder
             [
                 'page_name' => 'Home Page',
                 'slug' => 'home-page',
-                'image' => 'uploads/brandcamp/17617362431736524409.jpg',
+
+                'image' => 'uploads/brandcamp/17621617041987660742.jpg',
                 'translations' => [
                     'en' => [
                         'title' => 'Your Knowledge Secured. Your Interactions, Revolutionized.',

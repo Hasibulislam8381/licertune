@@ -3,22 +3,123 @@
 namespace Database\Seeders;
 
 use App\Models\DynamicPage;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\DynamicPageTranslation;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
 
 class DynamicPageSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
-        DynamicPage::insert([
-            [
-                "page_title"=> "Privacy And Policy",
-                "page_slug"=> "privacy-and-policy",
-                "page_content"=> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorem dolor facilis ratione tempora corrupti voluptatum amet consequuntur obcaecati iste, consequatur aut delectus magnam velit magni atque modi? Sunt, laborum corporis ab iure eos earum nam aspernatur voluptates ipsa necessitatibus sint eveniet odio maxime? Voluptatum minima ducimus, veritatis libero accusantium ad sapiente culpa dolorum modi laborum repellat officiis facere saepe veniam ab? Placeat quisquam ut illum fugiat voluptate modi autem facilis eaque illo ab, exercitationem velit obcaecati explicabo, necessitatibus perferendis ipsum quibusdam eligendi culpa cum quod repellat. Quasi sed sequi, sint numquam id minima ea nostrum dolor sit expedita quis veritatis excepturi modi ipsum inventore magnam quo corporis aliquam, blanditiis officiis laborum unde ad est. Commodi nemo illum cupiditate eum. Autem fuga mollitia, praesentium laborum aut, illum consectetur earum sed at perferendis atque maxime iure deleniti id nisi debitis repellendus natus dolores accusantium, consequuntur error labore neque commodi! Rem impedit tempore nam dolores cupiditate ut et vero? Molestias, dolorem? Quisquam, nobis quibusdam quos nesciunt, dolor laboriosam tenetur quam dolorum ipsum alias accusantium atque dolores delectus harum. Adipisci, facilis earum pariatur cum nobis qui quam temporibus aspernatur ipsum excepturi mollitia officia magnam aut libero architecto saepe dignissimos voluptatibus omnis eaque vero sequi. Soluta unde eveniet consequuntur, numquam id officiis vel earum maiores aliquam enim quia modi aspernatur nobis dolores accusamus optio ipsa suscipit eius quis est distinctio cum placeat? Veniam, eum expedita cupiditate est magnam, maiores corporis quod, dolorem eius consequuntur provident nihil quam totam. Adipisci est qui eius unde et laborum maxime totam incidunt fuga. Optio, temporibus dignissimos. Amet, consequatur natus totam, libero impedit quos, blanditiis laborum iste dolorum fugit maxime voluptatum facilis beatae consequuntur aliquid nobis consectetur iusto enim laboriosam molestiae? Quisquam aperiam ea obcaecati neque magnam modi consequuntur, nisi, ipsum doloribus quasi sint placeat alias dolorem reiciendis illo blanditiis architecto mollitia dignissimos id libero? Ipsum, iure et? Doloribus quasi in adipisci, porro, accusamus dicta aut rerum voluptatum maiores ratione omnis, animi debitis officia quidem placeat voluptatem aperiam quod magnam amet ullam distinctio? Velit voluptatum ullam facilis distinctio voluptate et dolorem. Eos id, accusamus cum, animi iste, alias a voluptatibus quaerat aspernatur architecto dolore deserunt reiciendis repellat numquam. Vero veritatis amet aut tempore. Molestias, similique? Repellat doloribus laudantium tempora labore repellendus et ipsam, accusantium temporibus vel optio ipsa odit. Eaque debitis, quas dolor ad nemo totam, dolorem quam illum soluta, voluptates omnis ducimus id reiciendis pariatur ullam officiis ipsum neque cum sequi quidem quisquam fugiat earum. Nostrum atque assumenda dignissimos doloremque mollitia nemo voluptatibus dolore deleniti veniam ducimus ut delectus, illum ipsa placeat, voluptatum eius aliquid ratione rem praesentium esse! Ipsum, quae asperiores debitis ducimus rerum cumque quis labore fugiat optio cum repudiandae provident ullam reprehenderit laudantium. Animi eligendi tempore vero rerum a repellendus culpa optio assumenda illum provident, quasi blanditiis, esse eveniet minima eius? Nostrum eos impedit voluptas atque earum, quae perspiciatis voluptate qui quaerat doloremque sequi, hic quos. Dolor, non numquam dolorem maxime provident quasi vitae, doloremque veritatis molestiae aperiam, eum impedit. Corrupti id iusto accusamus beatae!",
-            ]
+        // Base page (main/default English)
+        $page = DynamicPage::create([
+            'page_title'   => 'Privacy And Policy',
+            'page_slug'    => Str::slug('Privacy And Policy'),
+            'page_content' => 'This Privacy Policy explains how our company collects, uses, and protects your personal information when you use our website or services.',
         ]);
+
+        // Translations for multiple languages
+        $translations = [
+            'en' => [
+                'page_title' => 'Privacy And Policy',
+                'page_content' => "
+<h3>1. Introduction</h3>
+<p>We value your privacy and are committed to protecting your personal data. This policy outlines how we collect, use, and safeguard your information.</p>
+
+<h3>2. Information We Collect</h3>
+<p>We may collect personal information such as your name, email address, phone number, and any other details you provide when using our services.</p>
+
+<h3>3. How We Use Your Data</h3>
+<p>Your data is used to improve our services, respond to inquiries, process transactions, and send updates or promotional materials when permitted.</p>
+
+<h3>4. Cookies</h3>
+<p>We use cookies to enhance user experience, track usage patterns, and personalize content. You can choose to disable cookies in your browser settings.</p>
+
+<h3>5. Data Protection</h3>
+<p>We implement industry-standard security measures to prevent unauthorized access, alteration, or disclosure of your personal data.</p>
+
+<h3>6. Contact Us</h3>
+<p>If you have questions regarding this Privacy Policy, please contact us via our support page or email.</p>
+                ",
+            ],
+
+            'fr' => [
+                'page_title' => 'Politique de Confidentialité',
+                'page_content' => "
+<h3>1. Introduction</h3>
+<p>Nous accordons une grande importance à votre vie privée et nous nous engageons à protéger vos données personnelles. Cette politique décrit comment nous collectons, utilisons et protégeons vos informations.</p>
+
+<h3>2. Informations Collectées</h3>
+<p>Nous pouvons collecter des informations telles que votre nom, votre adresse e-mail, votre numéro de téléphone et d'autres données que vous fournissez lors de l'utilisation de nos services.</p>
+
+<h3>3. Utilisation des Données</h3>
+<p>Vos données sont utilisées pour améliorer nos services, répondre à vos demandes, traiter les paiements et vous envoyer des informations pertinentes ou promotionnelles.</p>
+
+<h3>4. Cookies</h3>
+<p>Nous utilisons des cookies pour améliorer votre expérience utilisateur, analyser le trafic et personnaliser le contenu. Vous pouvez désactiver les cookies dans les paramètres de votre navigateur.</p>
+
+<h3>5. Protection des Données</h3>
+<p>Nous mettons en œuvre des mesures de sécurité conformes aux normes du secteur afin d'éviter tout accès non autorisé ou toute fuite de vos informations personnelles.</p>
+
+<h3>6. Contact</h3>
+<p>Pour toute question concernant cette politique de confidentialité, veuillez nous contacter via notre page de support.</p>
+                ",
+            ],
+
+            'it' => [
+                'page_title' => 'Informativa sulla Privacy',
+                'page_content' => "
+<h3>1. Introduzione</h3>
+<p>Rispettiamo la tua privacy e ci impegniamo a proteggere i tuoi dati personali. Questa informativa descrive come raccogliamo, utilizziamo e proteggiamo le informazioni degli utenti.</p>
+
+<h3>2. Dati Raccolti</h3>
+<p>Raccogliamo dati come nome, indirizzo e-mail, numero di telefono e altre informazioni fornite durante l’utilizzo dei nostri servizi.</p>
+
+<h3>3. Utilizzo dei Dati</h3>
+<p>I tuoi dati vengono utilizzati per migliorare i nostri servizi, rispondere alle richieste, elaborare transazioni e inviare comunicazioni informative o promozionali.</p>
+
+<h3>4. Cookie</h3>
+<p>Utilizziamo i cookie per migliorare l’esperienza dell’utente, monitorare l’utilizzo del sito e personalizzare i contenuti. Puoi disattivare i cookie dalle impostazioni del browser.</p>
+
+<h3>5. Protezione dei Dati</h3>
+<p>Applichiamo misure di sicurezza avanzate per prevenire accessi non autorizzati o perdite di dati personali.</p>
+
+<h3>6. Contatti</h3>
+<p>Per domande su questa informativa, contattaci tramite la nostra pagina di supporto.</p>
+                ",
+            ],
+
+            'de' => [
+                'page_title' => 'Datenschutzrichtlinie',
+                'page_content' => "
+<h3>1. Einleitung</h3>
+<p>Wir respektieren Ihre Privatsphäre und verpflichten uns, Ihre persönlichen Daten zu schützen. Diese Richtlinie beschreibt, wie wir Informationen sammeln, verwenden und sichern.</p>
+
+<h3>2. Gesammelte Informationen</h3>
+<p>Wir können Daten wie Name, E-Mail-Adresse, Telefonnummer und andere von Ihnen bereitgestellte Informationen erfassen.</p>
+
+<h3>3. Verwendung der Daten</h3>
+<p>Ihre Daten werden verwendet, um unsere Dienstleistungen zu verbessern, Anfragen zu beantworten, Transaktionen zu verarbeiten und relevante Mitteilungen zu senden.</p>
+
+<h3>4. Cookies</h3>
+<p>Wir verwenden Cookies, um die Benutzererfahrung zu verbessern, die Nutzung zu analysieren und Inhalte zu personalisieren. Sie können Cookies in den Browsereinstellungen deaktivieren.</p>
+
+<h3>5. Datensicherheit</h3>
+<p>Wir setzen moderne Sicherheitsmaßnahmen ein, um unbefugten Zugriff oder Datenverlust zu verhindern.</p>
+
+<h3>6. Kontakt</h3>
+<p>Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns bitte über unsere Support-Seite.</p>
+                ",
+            ],
+        ];
+
+        foreach ($translations as $locale => $data) {
+            DynamicPageTranslation::create([
+                'dynamic_page_id' => $page->id,
+                'locale'          => $locale,
+                'page_title'      => $data['page_title'],
+                'page_content'    => $data['page_content'],
+            ]);
+        }
     }
 }

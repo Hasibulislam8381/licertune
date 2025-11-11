@@ -12,14 +12,8 @@
 
         @foreach ($features as $feature)
             <div class="card mb-4 p-3">
-                <h4>{{ $feature->title }}</h4>
+                <h4>Feature #{{ $feature->id }}</h4>
                 <input type="hidden" name="features[{{ $feature->id }}][id]" value="{{ $feature->id }}">
-
-                <div class="form-group">
-                    <label>Title</label>
-                    <input type="text" name="features[{{ $feature->id }}][title]"
-                        value="{{ old('features.' . $feature->id . '.title', $feature->title) }}" class="form-control">
-                </div>
 
                 <div class="form-group">
                     <label>Image</label>
@@ -29,10 +23,34 @@
                     @endif
                 </div>
 
-                <div class="form-group">
-                    <label>Features (comma separated)</label>
-                    <textarea name="features[{{ $feature->id }}][features]" class="form-control" rows="3">{{ old('features.' . $feature->id . '.features', $feature->features) }}</textarea>
-                </div>
+                @php
+                    $locales = ['en' => 'English', 'fr' => 'French', 'it' => 'Italian', 'de' => 'German'];
+                @endphp
+
+                @foreach ($locales as $localeCode => $localeName)
+                    <div class="border p-3 mt-3">
+                        <h5>{{ $localeName }} ({{ $localeCode }})</h5>
+
+                        @php
+                            $translation = $feature->translation($localeCode);
+                        @endphp
+
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text"
+                                name="features[{{ $feature->id }}][translations][{{ $localeCode }}][title]"
+                                value="{{ old('features.' . $feature->id . '.translations.' . $localeCode . '.title', $translation->title ?? '') }}"
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Features (comma separated)</label>
+                            <textarea name="features[{{ $feature->id }}][translations][{{ $localeCode }}][features]" class="form-control"
+                                rows="3">{{ old('features.' . $feature->id . '.translations.' . $localeCode . '.features', $translation->features ?? '') }}</textarea>
+                        </div>
+                    </div>
+                @endforeach
+
             </div>
         @endforeach
 

@@ -32,7 +32,8 @@ class BrandCampSeeder extends Seeder
                         'description' => "Sursenda GmbH è pioniera nell'assistenza intelligente, offrendo alle organizzazioni un assistente IA sicuro, privato e ad alte prestazioni.",
                     ],
                     'de' => [
-                        'title' => 'Ihr Wissen gesichert. Ihre Interaktionen, revolutioniert.',
+                        'title' => 'Ihr Wissen sicher.
+                        Ihre Interaktionen revolutionär.',
                         'subtitle' => 'Organisationen befähigen',
                         'description' => 'Als Pionier für intelligente Assistenz  entwickeln wir den führenden, KI-gestützten  Wissensassistenten. Er wurde von Grund auf  für Unternehmen konzipiert, die höchste  Ansprüche an absolute Datensicherheit und  vertrauliche Wissensnutzung stellen.',
                     ],

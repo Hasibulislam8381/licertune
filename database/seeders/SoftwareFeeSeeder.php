@@ -31,7 +31,7 @@ class SoftwareFeeSeeder extends Seeder
             ],
             'it' => [
                 'title' => 'Per utente, al mese',
-                'description' => "Canone fisso per l'intero sito, che garantisce un budget prevedibile per la tua organizzazione."
+                'description' => "Canone fisso per l'intero sito, che garantisce un budget prevedibile per la tua organizzazione. \n Accesso completo a tutte le funzionalità del software \n1. Aggiornamenti e miglioramenti regolari \n2. Assistenza clienti dedicata "
             ],
             'de' => [
                 'title' => 'Pro Benutzer, pro Monat',

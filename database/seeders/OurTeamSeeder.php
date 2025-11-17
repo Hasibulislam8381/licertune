@@ -16,9 +16,14 @@ class OurTeamSeeder extends Seeder
             [
                 'translations' => [
                     'en' => ['name' => 'Noél Monnerat', 'bio' => 'A highly skilled Backend Engineer specializing in large-scale distributed systems.'],
-                    'fr' => ['name' => 'Noél Monnerat', 'bio' => 'Un ingénieur Backend hautement qualifié spécialisé dans les systèmes distribués à grande échelle.'],
-                    'it' => ['name' => 'Noél Monnerat', 'bio' => 'Un ingegnere backend altamente qualificato specializzato in sistemi distribuiti su larga scala.'],
-                    'de' => ['name' => 'Noél Monnerat', 'bio' => 'Ein hochqualifizierter Backend-Ingenieur, spezialisiert auf groß angelegte verteilte Systeme.'],
+                    'fr' => ['name' => 'Noél Monnerat', 'bio' => "Ingénieur back-end hautement qualifié, Noél est spécialisé dans l'architecture et la mise en œuvre de systèmes distribués à grande échelle. Sa connaissance approfondie des infrastructures complexes garantit la robustesse, l'évolutivité et la performance de nos produits, capables de gérer des environnements de données exigeants."],
+                    'it' => ['name' => 'Noél Monnerat', 'bio' => 'Noél, Backend Engineer altamente qualificato, è specializzato
+nella progettazione e implementazione di sistemi distribuiti
+su larga scala. La sua profonda conoscenza
+delle infrastrutture complesse garantisce che i nostri prodotti siano
+robusti, scalabili e performanti, in grado
+di gestire ambienti dati complessi.'],
+                    'de' => ['name' => 'Noél Monnerat', 'bio' => 'Noél ist ein hochqualifizierter Backend-Ingenieur und auf die Entwicklung und Implementierung großer, verteilter Systeme spezialisiert. Sein fundiertes Verständnis komplexer Infrastrukturen stellt sicher, dass unsere Produkte robust, skalierbar und leistungsstark sind und auch anspruchsvolle Datenumgebungen bewältigen können.'],
                 ],
                 'image' => 'uploads/our_team/team3.jpg',
             ],
@@ -59,7 +64,7 @@ class OurTeamSeeder extends Seeder
                     ],
                     'fr' => [
                         'name' => 'Elio Petrini',
-                        'bio' => 'Als Full-Stack-Ingenieur mit einzigartigem juristischen Hintergrund bringt Elio eine entscheidende Doppelperspektive in unsere Abläufe ein. Seine Expertise treibt nicht nur die technische Entwicklung unserer Plattformen voran, sondern gewährleistet auch die strikte Einhaltung rechtlicher Rahmenbedingungen und die Einhaltung von Datenschutzbestimmungen, was angesichts unseres Schweizer Hostings besonders wichtig ist.',
+                        'bio' => "Ingénieur Full-Stack doté d'une solide expérience juridique, Elio apporte une double perspective essentielle à nos opérations. Son expertise pilote non seulement le développement technique de nos plateformes, mais garantit également le strict respect des cadres juridiques et la conformité des données, un élément particulièrement crucial compte tenu de notre hébergement en Suisse.",
                     ],
                     'it' => [
                         'name' => 'Elio Petrini',

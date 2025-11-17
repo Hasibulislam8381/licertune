@@ -46,12 +46,15 @@ class CmsSeeder extends Seeder
                     'de' => [
                         'title' => 'Über uns',
                         'sub_title' => 'Sursenda GmbH',
-                        'description' => 'Unsere Vision ist einfach: nahtlose,  intelligente und zutiefst personalisierte  Interaktionen zu ermöglichen, die den Zugriff  auf und die Nutzung von Informationen  grundlegend verändern.
+                        'description' => 'Unsere Vision ist einfach: nahtlose, intelligente und zutiefst personalisierte Interaktionen zu ermöglichen, die den Zugriff auf und die Nutzung von Informationen grundlegend verändern.
 
-                        Unsere Lösung basiert auf zwei zentralen  Pfeilern:
+Unsere Lösung basiert auf zwei zentralen Pfeilern:
 
-                        Adaptive Intelligenz: Massgeschneiderte Lösungen,  insbesondere für den Rechts- und Medizinbereich.
-                        Unerschütterliches Vertrauen:  Unser kompromissloses Bekenntnis  zum Datenschutz'
+• Adaptive Intelligenz:
+  Massgeschneiderte Lösungen, insbesondere für den Rechts- und Medizinbereich.
+
+• Unerschütterliches Vertrauen:
+  Unser kompromissloses Bekenntnis zum Datenschutz.'
                     ],
                 ],
             ],
@@ -106,7 +109,7 @@ class CmsSeeder extends Seeder
                     'de' => [
                         'title' => 'Sursenda GmbH',
                         'description' => 'Wir stärken Ihre Organisation durch die Bereitstellung eines sicheren und intelligenten  Assistenten, der Ihre Unternehmensdaten in umsetzbare Erkenntnisse umwandelt und so  Effizienz und Innovation mit unerschütterlichen Vertrauen und Datenschutz fördert.',
-                        'sub_title' => 'Warum Sursenda',
+                        'sub_title' => ' Speziallösungen für Recht & Medizin',
                         'sub_description' => 'Unsere junge, energische Herangehensweise bringt eine frische Perspektive in jede  Herausforderung. Wir entwickeln Lösungen, die über die reine Funktionalität hinausgehen,  unser Assistent ist Ihr proaktiver Partner und unverzichtbarer Informationsgeber. Wir nutzen  diesen Enthusiasmus, um Lösungen zu entwickeln, die über die reine Funktionalität  hinausgehen und ein Höchstmass an Intelligenz und Personalisierung bieten. Wir verstehen  unseren Assistenten als proaktiven Partner und unverzichtbaren Informationsgeber.'
                     ],
                 ],
@@ -135,7 +138,7 @@ class CmsSeeder extends Seeder
                     ],
                     'de' => [
                         'title' => 'Lernen Sie unser Team kennen',
-                        'description' => 'Wir sind ein dynamisches, spezialisiertes Team, geeint durch das Ziel, einzigartige Lösungen für  unsere Kunden in den Sektoren Recht und Medizin zu entwickeln, deren Bedürfnisse besonders  spezifisch sind.  Jahrelange Erfahrung in verschiedenen Disziplinen schärft unser vielseitiges Know-How. Es ist  der Motor, der es uns ermöglicht, unsere Leidenschaft in jedes Detail einfliessen zu lassen, um  ein Produkt zu liefern, das sich klar abhebt. '
+                        'description' => 'Wir sind ein dynamisches und engagiertes Team, das die gemeinsame Mission hat, den führenden KI-gestützten Wissensassistenten zu entwickeln und dabei vielfältiges Fachwissen von Backend-Engineering bis hin zu Rechts- und Cloud-Technologien einzubringen. '
                     ],
                 ],
             ],
@@ -162,7 +165,7 @@ class CmsSeeder extends Seeder
                     ],
                     'de' => [
                         'title' => 'Das Problem – Unsere Mission – Die Lösung',
-                        'description' => 'Reale Herausforderungen in sinnvolle, menschenzentrierte Lösungen verwandeln.',
+                        'description' => 'Echte Herausforderungen in sinnvolle, menschenzentrierte Lösungen umwandeln.',
                     ],
                 ]
             ],
@@ -180,18 +183,22 @@ class CmsSeeder extends Seeder
                         'title' => 'Adaptive Intelligence, Unwavering Trust',
                         'description' => "Your data is exclusively hosted in the European Union, never used for training or product development. We're built on a foundation where data protection isn't just a feature—it's the core of our design.",
                     ],
+                    
                     'fr' => [
-                        'title' => 'Intelligence adaptative, confiance inébranlable',
-                        'description' => "Vos données sont hébergées exclusivement dans l'Union européenne et ne sont jamais utilisées à des fins de formation ou de développement produit. La protection des données est au cœur de notre conception et non pas une simple fonctionnalité.",
+                        'title' => "D'assistant à associé",
+                        'description' => "Notre produit n'est pas un simple outil, mais un partenaire proactif. Il permet une sélection de contexte personnalisée adaptée à vos besoins spécifiques, vous aidant à prendre des décisions éclairées et à travailler plus efficacement grâce à des informations traçables.",
                     ],
+                    
                     'de' => [
-                        'title' => 'Adaptive Intelligenz, unerschütterliches Vertrauen',
-                        'description' => 'Wir schützen Ihre Daten mit den höchsten Standards an Integrität und Datenschutz. Wir  garantieren, dass alle Benutzerinformationen ausschliesslich innerhalb der Europäischen Union  gehostet werden oder, auf Wunsch, nur innerhalb der Schweiz. Ihre Daten gehören Ihnen allein  und werden niemals für Testzwecke oder Produktverbesserungen verwendet.',
+                        'title' => 'Vom Assistenten zum Partner',
+                        'description' => 'Wallee ist mehr als nur ein Werkzeug, es ist Ihr proaktiver Partner. Dank individueller  Kontextauswahl liefert es präzise, nachvollziehbare Erkenntnisse, die genau Ihren  Anforderungen entsprechen. So treffen Sie fundierte Entscheidungen und steigern Ihre Effizienz  sofort.',
                     ],
                     'it' => [
-                        'title' => 'Intelligenza adattiva, fiducia incrollabile',
-                        'description' => "I tuoi dati sono ospitati esclusivamente nell'Unione Europea e non vengono mai utilizzati per la formazione o lo sviluppo di prodotti. La nostra azienda si fonda su una base in cui la protezione dei dati non è solo una caratteristica, ma il fulcro del nostro progetto.",
+                        'title' => 'Da assistente a partner',
+                        'description' => 'Il nostro prodotto non è un semplice strumento, ma un partner proattivo. Permette di selezionare contesti personalizzati in base alle vostre esigenze specifiche, aiutandovi a prendere decisioni consapevoli e a lavorare in modo più efficiente, fornendo informazioni tracciabili.',
                     ],
+                    
+                    
                 ]
             ],
             // 🟩 3. Mission Section
@@ -209,16 +216,17 @@ class CmsSeeder extends Seeder
                         'description' => 'Our product is not a simple tool, but a proactive partner. It enables custom context selection to fit your unique needs, helping you make informed decisions and work more efficiently by providing traceable insights.',
                     ],
                     'fr' => [
-                        'title' => "D'assistant à associé",
-                        'description' => "Notre produit n'est pas un simple outil, mais un partenaire proactif. Il permet une sélection de contexte personnalisée adaptée à vos besoins spécifiques, vous aidant à prendre des décisions éclairées et à travailler plus efficacement grâce à des informations traçables.",
+                        'title' => 'Intelligence adaptative, confiance inébranlable',
+                        'description' => "Vos données sont hébergées exclusivement dans l'Union européenne et ne sont jamais utilisées à des fins de formation ou de développement produit. La protection des données est au cœur de notre conception et non pas une simple fonctionnalité.",
                     ],
                     'de' => [
-                        'title' => 'Vom Assistenten zum Partner',
-                        'description' => 'Wallee ist mehr als nur ein Werkzeug, es ist Ihr proaktiver Partner. Dank individueller  Kontextauswahl liefert es präzise, nachvollziehbare Erkenntnisse, die genau Ihren  Anforderungen entsprechen. So treffen Sie fundierte Entscheidungen und steigern Ihre Effizienz  sofort.',
+                        'title' => 'Adaptive Intelligenz, unerschütterliches Vertrauen',
+                        'description' => 'Wir schützen Ihre Daten mit den höchsten Standards an Integrität und Datenschutz. Wir  garantieren, dass alle Benutzerinformationen ausschliesslich innerhalb der Europäischen Union  gehostet werden oder, auf Wunsch, nur innerhalb der Schweiz. Ihre Daten gehören Ihnen allein  und werden niemals für Testzwecke oder Produktverbesserungen verwendet.',
                     ],
+                    
                     'it' => [
-                        'title' => 'Da assistente a partner',
-                        'description' => 'Il nostro prodotto non è un semplice strumento, ma un partner proattivo. Permette di selezionare contesti personalizzati in base alle vostre esigenze specifiche, aiutandovi a prendere decisioni consapevoli e a lavorare in modo più efficiente, fornendo informazioni tracciabili.',
+                        'title' => 'Intelligenza adattiva, fiducia incrollabile',
+                        'description' => "I tuoi dati sono ospitati esclusivamente nell'Unione Europea e non vengono mai utilizzati per la formazione o lo sviluppo di prodotti. La nostra azienda si fonda su una base in cui la protezione dei dati non è solo una caratteristica, ma il fulcro del nostro progetto.",
                     ],
                 ]
             ],
@@ -278,7 +286,7 @@ class CmsSeeder extends Seeder
                     ],
                     'it' => [
                         'title' => 'Il nostro modello di prezzi trasparente',
-                        'description' => "Crediamo in un modello di prezzo chiaro ed equo. L'unica tariffa che addebitiamo è la nostra licenza base.
+                        'description' => "Crediamo in un modello di prezzo chiaro ed equo. L'unica tariffa che addebitiamo è la nostra licenza base. \n
 
                         I costi dell'infrastruttura cloud (elaborazione, storage, larghezza di banda) vengono fatturati direttamente al cliente.
                         I clienti pagano esattamente ciò che consumano, senza maggiorazioni nascoste.
@@ -369,9 +377,10 @@ class CmsSeeder extends Seeder
                         'description' => 'Vous pouvez compter sur nos tarifs SaaS abordables et prévisibles pour le logiciel de base, ce qui rend la budgétisation simple et sans coûts cachés.'
                     ],
                     'it' => [
-                        'title' => 'Prezzi prevedibili',
-                        'description' => 'Puoi contare sui nostri prezzi SaaS convenienti e prevedibili per il software principale, rendendo la definizione del budget semplice e priva di costi nascosti.s'
+                        'title' => 'Scalabilità e flessibilità',
+                        'description' => 'La nostra soluzione è progettata per essere flessibile sia per i piccoli team che per le grandi aziende, consentendoti di scalare facilmente man mano che la tua organizzazione cresce.'
                     ],
+                    
                     'de' => [
                         'title' => 'Vorhersehbare Preise',
                         'description' => 'Sie können sich auf unsere günstigen und vorhersehbaren SaaS-Preise für die Kernsoftware verlassen, wodurch die Budgetierung unkompliziert und frei von versteckten Kosten ist.'
@@ -396,10 +405,12 @@ class CmsSeeder extends Seeder
                         'title' => 'Évolutivité et flexibilité',
                         'description' => "Notre solution est conçue pour être flexible aussi bien pour les petites équipes que pour les grandes entreprises, vous permettant d'évoluer facilement à mesure que votre organisation se développe."
                     ],
+
                     'it' => [
-                        'title' => 'Scalabilità e flessibilità',
-                        'description' => 'La nostra soluzione è progettata per essere flessibile sia per i piccoli team che per le grandi aziende, consentendoti di scalare facilmente man mano che la tua organizzazione cresce.'
+                        'title' => 'Prezzi prevedibili',
+                        'description' => 'Puoi contare sui nostri prezzi SaaS convenienti e prevedibili per il software principale, rendendo la definizione del budget semplice e priva di costi nascosti.s'
                     ],
+                    
                     'de' => [
                         'title' => 'Skalierbarkeit und Flexibilität',
                         'description' => 'Unsere Lösung ist flexibel und eignet sich sowohl für kleine Teams als auch für große Unternehmen. So können Sie problemlos skalieren, wenn Ihr Unternehmen wächst.'
@@ -453,7 +464,7 @@ class CmsSeeder extends Seeder
                         'description' => "Une enquête récente de Thomson Reuters a révélé que les professionnels du droit utilisant des outils d’IA s’attendent à libérer en moyenne près de 240 heures par an.\nCe chiffre représente une opportunité significative pour les avocats de récupérer le temps consacré aux tâches administratives et non facturables, et de se concentrer sur un travail client à plus forte valeur ajoutée."
                     ],
                     'it' => [
-                        'title' => 'Perché Ora',
+                        'title' => 'Perché adesso',
                         'description' => "Un recente sondaggio di Thomson Reuters ha rilevato che i professionisti legali che utilizzano strumenti di IA prevedono di liberare in media quasi 240 ore all’anno.\nQuesto numero rappresenta un’opportunità significativa per gli avvocati di recuperare il tempo dedicato a compiti amministrativi e non fatturabili, concentrandosi invece su attività a maggior valore per i clienti."
                     ],
                     'de' => [
@@ -569,7 +580,7 @@ class CmsSeeder extends Seeder
                     ],
                     'de' => [
                         'title' => 'Bereit loszulegen?',
-                        'description' => 'Sind Sie bereit für den nächsten Schritt? Erfahren Sie, wie unser KI-Assistent Ihre täglichen. Abläufe transformieren kann. Wir freuen uns auf Ihre Kontaktaufnahme! Datenschutzhinweis Wir nutzen Ihre Angaben ausschliesslich zur Beantwortung Ihrer Anfrage. Die Verarbeitung Ihrer Daten erfolgt streng nach DSG/DSGVO-Standards. Details finden Sie in unserer[Datenschutzerklärung] (or: [Privacy Policy]) .'
+                        'description' => 'Sind Sie bereit für den nächsten Schritt? Erfahren Sie, wie unser KI-Assistent Ihre täglichen. Abläufe transformieren kann. Wir freuen uns auf Ihre Kontaktaufnahme! Datenschutzhinweis Wir nutzen Ihre Angaben ausschliesslich zur Beantwortung Ihrer Anfrage. Die VerarbeitungIhrer Daten erfolgt streng nach DSG/DSGVO-Standards. Details finden Sie in unserer[Datenschutzerklärung] (or: [Privacy Policy]) .'
                     ],
                 ],
             ],
@@ -622,9 +633,9 @@ class CmsSeeder extends Seeder
                     'it' => [
                         'title' => 'MVP - Pronto ORA',
                         'description' => "Il nostro prodotto attuale è pronto per l'uso
-e include funzionalità di chat, analisi basate su tabelle
-e sicurezza avanzata con rigorosi
-controlli di conformità."
+                        e include funzionalità di chat, analisi basate su tabelle
+                        e sicurezza avanzata con rigorosi
+                        controlli di conformità."
                     ],
                     'de' => [
                         'title' => ' Ihr smarter Chatbot für dynamische Wissensarbeit',
@@ -875,7 +886,7 @@ controlli di conformità."
                     ],
                     'fr' => [
                         'title' => 'Parlez-nous de vos défis',
-                        'description' => 'Siamo qui per comprendere i tuoi flussi di lavoro più complessi e scoprire come la nostra piattaforma può evolversi per soddisfare le tue esigenze specifiche.',
+                        'description' => 'Nous sommes là pour comprendre vos flux de travail les plus complexes et apprendre comment notre plateforme peut évoluer pour répondre à vos besoins spécifiques.',
                     ],
                     'it' => [
                         'title' => 'Raccontaci le tue sfide',

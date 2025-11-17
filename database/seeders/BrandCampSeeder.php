@@ -14,7 +14,7 @@ class BrandCampSeeder extends Seeder
                 'page_name' => 'Home Page',
                 'slug' => 'home-page',
 
-                'image' => 'uploads/brandcamp/17621617041987660742.jpg',
+                'image' => 'uploads/brandcamp/licer_home.jpg',
                 'translations' => [
                     'en' => [
                         'title' => 'Your Knowledge Secured. Your Interactions, Revolutionized.',
@@ -41,7 +41,7 @@ class BrandCampSeeder extends Seeder
             [
                 'page_name' => 'Contact Us',
                 'slug' => 'contact-us',
-                'image' => 'uploads/brandcamp/17617362431736524409.jpg',
+                'image' => 'uploads/brandcamp/contact_us_brad.jpg',
                 'translations' => [
                     'en' => ['title' => 'Contact Us'],
                     'fr' => ['title' => 'Contactez-nous'],
@@ -52,7 +52,7 @@ class BrandCampSeeder extends Seeder
             [
                 'page_name' => 'About Us',
                 'slug' => 'about-us',
-                'image' => 'uploads/brandcamp/17617362431736524409.jpg',
+                'image' => 'uploads/brandcamp/about_us_brad.jpg',
                 'translations' => [
                     'en' => ['title' => 'About Us'],
                     'fr' => ['title' => 'À propos de nous'],
@@ -63,7 +63,7 @@ class BrandCampSeeder extends Seeder
             [
                 'page_name' => 'Pricing',
                 'slug' => 'pricing',
-                'image' => 'uploads/brandcamp/17617362431736524409.jpg',
+                'image' => 'uploads/brandcamp/pricing_brad.jpg',
                 'translations' => [
                     'en' => ['title' => 'Pricing'],
                     'fr' => ['title' => 'Tarification'],
@@ -74,7 +74,7 @@ class BrandCampSeeder extends Seeder
             [
                 'page_name' => 'Our Product',
                 'slug' => 'our-product',
-                'image' => 'uploads/brandcamp/17617362431736524409.jpg',
+                'image' => 'uploads/brandcamp/our_product_brad.jpg',
                 'translations' => [
                     'en' => ['title' => 'Our Product'],
                     'fr' => ['title' => 'Notre produit'],
@@ -82,13 +82,7 @@ class BrandCampSeeder extends Seeder
                     'de' => ['title' => 'Unser Produkt'],
                 ],
             ],
-            // আরও pages চাইলে এখানে add করতে পারো
-            // [
-            //     'page_name' => 'contact',
-            //     'slug' => 'contact',
-            //     'image' => null,
-            //     'translations' => [ ... ]
-            // ],
+
         ];
 
         foreach ($pages as $page) {

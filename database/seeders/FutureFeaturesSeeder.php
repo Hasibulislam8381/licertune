@@ -12,28 +12,28 @@ class FutureFeaturesSeeder extends Seeder
     {
         // 1. Main feature record (image only)
         $feature = FutureFeatures::create([
-            'title' => 'Future Features: Core Integration',
+            'title' => 'Future Features: Advanced Administration',
             'image' => 'uploads/future_features/17618186491150613299.jpg',
-            'features' => 'DMS Integration, Secure Data Access, Single Source of Truth, Office Integration',
+            'features' => 'Granular user & role management, Custom policies. compliance & audit features, Analytics dashboard usage and performance, Enterprise-grade scalability and governance',
         ]);
 
         // 2. Translations
         $translations = [
             'en' => [
-                'title' => 'Future Features: Core Integration',
-                'features' => 'DMS Integration, Secure Data Access, Single Source of Truth, Office Integration',
+                'title' => 'Future Features: Advanced Administration',
+                'features' => 'Granular user & role management, Custom policies. Compliance & audit features, Analytics dashboard usage and performance, Enterprise-grade scalability and governance',
             ],
             'fr' => [
-                'title' => 'Fonctionnalités Futures : Intégration Centrale',
-                'features' => 'Intégration DMS, Accès sécurisé aux données, Source unique de vérité, Intégration Office',
+                'title' => 'Fonctionnalités Futures : Administration Avancée',
+                'features' => 'Gestion granulaire des utilisateurs et des rôles. Politiques personnalisées, Fonctions de conformité et d’audit, Tableau de bord analytique sur l’utilisation et les performances, Gouvernance et évolutivité de niveau entreprise',
             ],
             'it' => [
-                'title' => 'Funzionalità Future: Integrazione Core',
-                'features' => 'Integrazione DMS, Accesso sicuro ai dati, Fonte unica di verità, Integrazione Office',
+                'title' => 'Funzionalità Future: Amministrazione Avanzata',
+                'features' => 'Gestione granulare di utenti e ruoli, Politiche personalizzate. Funzionalità di conformità e audit, Dashboard analitica su utilizzo e prestazioni, Scalabilità e governance di livello enterprise',
             ],
             'de' => [
-                'title' => 'Zukünftige Funktionen: Kernintegration',
-                'features' => 'DMS-Integration, Sicherer Datenzugriff, Single Source of Truth, Office-Integration',
+                'title' => 'Zukünftige Funktionen: Erweiterte Verwaltung',
+                'features' => 'Granulare Benutzer- und Rollenverwaltung, Benutzerdefinierte Richtlinien. Compliance- und Auditfunktionen, Analyse-Dashboard für Nutzung und Leistung, Unternehmensweite Skalierbarkeit und Governance',
             ],
         ];
 

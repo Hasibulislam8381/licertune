@@ -144,27 +144,32 @@ class CmsSeeder extends Seeder
                 'page_name' => 'ProblemMissionSolution',
                 'slug' => 'problem-section',
                 'section_name' => 'problem_section',
-                'image' => 'uploads/cms/17617269001590060268.jpg',
+                'image' => 'uploads/cms/mission.jpg',
                 'btn_text' => '',
                 'btn_url' => '#',
                 'status' => 1,
                 'translations' => [
                     'en' => [
-                        'title' => 'The Problem',
-                        'description' => 'Businesses today face increasing complexity in managing data, scalability, and integration.',
+                        'title' => 'Adaptive Intelligence, Unwavering Trust',
+                        'description' => "Your data is exclusively hosted in the European Union, never used for training or product development. We're built on a foundation where data protection isn't just a feature—it's the core of our design.",
                     ],
                     'fr' => [
-                        'title' => 'Le Problème',
-                        'description' => 'Les entreprises d’aujourd’hui sont confrontées à une complexité croissante dans la gestion des données, de la scalabilité et de l’intégration.',
-                    ],
-                    'it' => [
-                        'title' => 'Il Problema',
-                        'description' => 'Le aziende di oggi affrontano una crescente complessità nella gestione dei dati, della scalabilità e dell’integrazione.',
+                        'title' => 'Intelligence Adaptive, Confiance Inébranlable',
+                        'description' => "Vos données sont hébergées exclusivement dans l'Union européenne, jamais utilisées pour l'entraînement ou le développement de produits. Nous sommes construits sur une base où la protection des données n'est pas seulement une fonctionnalité — c'est le cœur de notre conception.",
                     ],
                     'de' => [
-                        'title' => 'Das Problem',
-                        'description' => 'Unternehmen stehen heute vor zunehmender Komplexität bei der Verwaltung von Daten, Skalierbarkeit und Integration.',
+                        'title' => 'Adaptive Intelligenz, Unerschütterliches Vertrauen',
+                        'description' => "Ihre Daten werden ausschließlich in der Europäischen Union gespeichert und niemals für Training oder Produktentwicklung verwendet. Wir basieren auf einem Fundament, bei dem Datenschutz nicht nur eine Funktion ist — er ist das Herzstück unseres Designs.",
                     ],
+                    'es' => [
+                        'title' => 'Inteligencia Adaptativa, Confianza Inquebrantable',
+                        'description' => "Sus datos se alojan exclusivamente en la Unión Europea, nunca se usan para entrenamiento o desarrollo de productos. Estamos construidos sobre una base donde la protección de datos no es solo una característica: es el núcleo de nuestro diseño.",
+                    ],
+                    'it' => [
+                        'title' => 'Intelligenza Adattiva, Fiducia Incondizionata',
+                        'description' => "I tuoi dati sono ospitati esclusivamente nell'Unione Europea e non vengono mai utilizzati per formazione o sviluppo del prodotto. Siamo costruiti su una base in cui la protezione dei dati non è solo una funzionalità: è il cuore del nostro design.",
+                    ],
+
                 ]
             ],
             // 🟩 3. Mission Section
@@ -172,26 +177,30 @@ class CmsSeeder extends Seeder
                 'page_name' => 'ProblemMissionSolution',
                 'slug' => 'mission-section',
                 'section_name' => 'mission_section',
-                'image' => 'uploads/cms/17617269001590060268.jpg',
+                'image' => 'uploads/cms/problem.jpg',
                 'btn_text' => '',
                 'btn_url' => '#',
                 'status' => 1,
                 'translations' => [
                     'en' => [
-                        'title' => 'Our Mission',
-                        'description' => 'We aim to simplify complex digital ecosystems through innovative, reliable, and human-centered technology.',
+                        'title' => 'From Assistant to Partner',
+                        'description' => "Our product is not a simple tool, but a proactive partner. It enables custom context selection to fit your unique needs, helping you make informed decisions and work more efficiently by providing traceable insights.",
                     ],
                     'fr' => [
-                        'title' => 'Notre Mission',
-                        'description' => 'Notre objectif est de simplifier les écosystèmes numériques complexes grâce à une technologie innovante, fiable et centrée sur l’humain.',
-                    ],
-                    'it' => [
-                        'title' => 'La Nostra Missione',
-                        'description' => 'Il nostro obiettivo è semplificare ecosistemi digitali complessi attraverso tecnologie innovative, affidabili e incentrate sull’uomo.',
+                        'title' => 'De l’Assistant au Partenaire',
+                        'description' => "Notre produit n'est pas un simple outil, mais un partenaire proactif. Il permet une sélection de contexte personnalisée pour répondre à vos besoins uniques, vous aidant à prendre des décisions éclairées et à travailler plus efficacement en fournissant des informations traçables.",
                     ],
                     'de' => [
-                        'title' => 'Unsere Mission',
-                        'description' => 'Wir wollen komplexe digitale Ökosysteme durch innovative, zuverlässige und menschenzentrierte Technologie vereinfachen.',
+                        'title' => 'Vom Assistenten zum Partner',
+                        'description' => "Unser Produkt ist kein einfaches Werkzeug, sondern ein proaktiver Partner. Es ermöglicht die Auswahl eines individuellen Kontexts, der auf Ihre einzigartigen Bedürfnisse zugeschnitten ist, und hilft Ihnen, fundierte Entscheidungen zu treffen und effizienter zu arbeiten, indem es nachvollziehbare Einblicke liefert.",
+                    ],
+                    'es' => [
+                        'title' => 'De Asistente a Socio',
+                        'description' => "Nuestro producto no es una herramienta simple, sino un socio proactivo. Permite la selección de contexto personalizada para adaptarse a sus necesidades únicas, ayudándole a tomar decisiones informadas y a trabajar de manera más eficiente proporcionando información trazable.",
+                    ],
+                    'it' => [
+                        'title' => 'Da Assistente a Partner',
+                        'description' => "Il nostro prodotto non è un semplice strumento, ma un partner proattivo. Consente la selezione di contesti personalizzati per soddisfare le tue esigenze uniche, aiutandoti a prendere decisioni informate e a lavorare più efficacemente fornendo informazioni tracciabili.",
                     ],
                 ]
             ],
@@ -206,20 +215,24 @@ class CmsSeeder extends Seeder
                 'status' => 1,
                 'translations' => [
                     'en' => [
-                        'title' => 'The Solution',
-                        'description' => 'Our unified platform delivers scalable infrastructure, robust data integration, and seamless automation.',
+                        'title' => 'Engineered for Excellence',
+                        'description' => "We combine advanced machine learning and natural language processing with flexible, secure integration, delivering a powerful AI knowledge assistant for organizations with the highest demands for security and performance.",
                     ],
                     'fr' => [
-                        'title' => 'La Solution',
-                        'description' => 'Notre plateforme unifiée offre une infrastructure évolutive, une intégration de données robuste et une automatisation fluide.',
-                    ],
-                    'it' => [
-                        'title' => 'La Soluzione',
-                        'description' => 'La nostra piattaforma unificata offre un’infrastruttura scalabile, un’integrazione dei dati solida e un’automazione fluida.',
+                        'title' => 'Conçu pour l’Excellence',
+                        'description' => "Nous combinons l'apprentissage automatique avancé et le traitement du langage naturel avec une intégration flexible et sécurisée, offrant un assistant de connaissance IA puissant pour les organisations ayant les exigences les plus élevées en matière de sécurité et de performance.",
                     ],
                     'de' => [
-                        'title' => 'Die Lösung',
-                        'description' => 'Unsere einheitliche Plattform bietet skalierbare Infrastruktur, robuste Datenintegration und nahtlose Automatisierung.',
+                        'title' => 'Für Exzellenz Entwickelt',
+                        'description' => "Wir kombinieren fortschrittliches maschinelles Lernen und natürliche Sprachverarbeitung mit flexibler, sicherer Integration und liefern einen leistungsstarken KI-Wissensassistenten für Organisationen mit den höchsten Anforderungen an Sicherheit und Leistung.",
+                    ],
+                    'es' => [
+                        'title' => 'Diseñado para la Excelencia',
+                        'description' => "Combinamos aprendizaje automático avanzado y procesamiento del lenguaje natural con integración flexible y segura, ofreciendo un potente asistente de conocimiento AI para organizaciones con las más altas exigencias de seguridad y rendimiento.",
+                    ],
+                    'it' => [
+                        'title' => 'Progettato per l’Eccellenza',
+                        'description' => "Combiniamo apprendimento automatico avanzato e elaborazione del linguaggio naturale con integrazione flessibile e sicura, fornendo un potente assistente di conoscenza AI per organizzazioni con le più elevate esigenze di sicurezza e prestazioni.",
                     ],
                 ]
             ],
@@ -464,21 +477,21 @@ class CmsSeeder extends Seeder
                 'status' => 1,
                 'translations' => [
                     'en' => [
-                        'title' => 'Up to 240',
-                        'description' => 'Time Savings Annually (hours)'
+                        'title' => '48,000',
+                        'description' => 'Average Savings per Lawyer per Year (CHF)',
                     ],
                     'fr' => [
-                        'title' => 'Jusqu’à 240',
-                        'description' => 'Économies de temps annuelles (heures)'
+                        'title' => '48 000',
+                        'description' => 'Économies moyennes par avocat et par an (CHF)',
                     ],
                     'it' => [
-                        'title' => 'Fino a 240',
-                        'description' => 'Risparmio di tempo annuale (ore)'
+                        'title' => '48.000',
+                        'description' => 'Risparmio medio per avvocato all’anno (CHF)',
                     ],
                     'de' => [
-                        'title' => 'Bis zu 240',
-                        'description' => 'Jährliche Zeitersparnis (Stunden)'
-                    ]
+                        'title' => '48.000',
+                        'description' => 'Durchschnittliche Einsparung pro Anwalt und Jahr (CHF)',
+                    ],
                 ],
             ],
 
@@ -493,21 +506,21 @@ class CmsSeeder extends Seeder
                 'status' => 1,
                 'translations' => [
                     'en' => [
-                        'title' => 'Up to 240',
-                        'description' => 'Time Savings Annually (hours)'
+                        'title' => '14M',
+                        'description' => 'Up to Annual Savings (CHF)',
                     ],
                     'fr' => [
-                        'title' => 'Jusqu’à 240',
-                        'description' => 'Économies de temps annuelles (heures)'
+                        'title' => '14 M',
+                        'description' => 'Jusqu’à économies annuelles (CHF)',
                     ],
                     'it' => [
-                        'title' => 'Fino a 240',
-                        'description' => 'Risparmio di tempo annuale (ore)'
+                        'title' => '14 M',
+                        'description' => 'Fino a risparmi annuali (CHF)',
                     ],
                     'de' => [
-                        'title' => 'Bis zu 240',
-                        'description' => 'Jährliche Zeitersparnis (Stunden)'
-                    ]
+                        'title' => '14 Mio.',
+                        'description' => 'Bis zu jährliche Einsparungen (CHF)',
+                    ],
                 ],
             ],
             [

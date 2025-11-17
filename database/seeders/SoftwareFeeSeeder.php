@@ -27,7 +27,7 @@ class SoftwareFeeSeeder extends Seeder
             ],
             'fr' => [
                 'title' => 'Par utilisateur, par mois',
-                'description' => "Forfait à l'échelle du site garantissant une budgétisation prévisible pour votre organisation."
+                'description' => "Forfait à l'échelle du site garantissant une budgétisation prévisible pour votre organisation. \n1.Accès complet à toutes les fonctionnalités du logiciel \n2.Mises à jour et améliorations régulières \n3.Support client dédié"
             ],
             'it' => [
                 'title' => 'Per utente, al mese',
@@ -35,7 +35,7 @@ class SoftwareFeeSeeder extends Seeder
             ],
             'de' => [
                 'title' => 'Pro Benutzer, pro Monat',
-                'description' => 'Eine standortweite Pauschalgebühr gewährleistet eine vorhersehbare Budgetierung für Ihr Unternehmen.'
+                'description' => 'Eine standortweite Pauschalgebühr gewährleistet eine vorhersehbare Budgetierung für Ihr Unternehmen , Voller Zugriff auf alle Softwarefunktionen , Regelmäßige Updates und Verbesserungen , Engagierter Kundensupport'
             ],
         ];
 
@@ -78,7 +78,7 @@ class SoftwareFeeSeeder extends Seeder
             ],
             'de' => [
                 'title' => 'Einmalige Einrichtungsgebühr',
-                'description' => 'Einmalige Einrichtungsgebühr für Neukunden.'
+                'description' => 'Einmalige Einrichtungsgebühr für Neukunden. Voller Zugriff auf alle Softwarefunktionen , Regelmäßige Updates und Verbesserungen, Engagierter Kundensupport'
             ],
         ];
 

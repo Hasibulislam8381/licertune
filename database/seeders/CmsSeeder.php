@@ -46,15 +46,8 @@ class CmsSeeder extends Seeder
                     'de' => [
                         'title' => 'Über uns',
                         'sub_title' => 'Sursenda GmbH',
-                        'description' => 'Unsere Vision ist einfach: nahtlose, intelligente und zutiefst personalisierte Interaktionen zu ermöglichen, die den Zugriff auf und die Nutzung von Informationen grundlegend verändern.
-
-Unsere Lösung basiert auf zwei zentralen Pfeilern:
-
-• Adaptive Intelligenz:
-  Massgeschneiderte Lösungen, insbesondere für den Rechts- und Medizinbereich.
-
-• Unerschütterliches Vertrauen:
-  Unser kompromissloses Bekenntnis zum Datenschutz.'
+                        'description' => 'Unsere Vision ist einfach: Wir gestalten die Zukunft der intelligenten Assistenz.
+Wir entwickeln den führenden KI-gestützten Wissensassistenten, der speziell für Unternehmen konzipiert ist, die höchste Sicherheit und absoluten Datenschutz verlangen. Unser Produkt ist nicht nur ein Assistent – ​​es ist ein proaktiver Partner, der auf Ihren Arbeitsablauf zugeschnitten ist und Ihnen hilft, mithilfe nachvollziehbarer, datenbasierter Erkenntnisse schneller fundierte Entscheidungen zu treffen.'
                     ],
                 ],
             ],
@@ -107,9 +100,10 @@ Unsere Lösung basiert auf zwei zentralen Pfeilern:
                         la conformità alle leggi svizzere sulla governance dei dati."
                     ],
                     'de' => [
-                        'title' => 'Sursenda GmbH',
-                        'description' => 'Wir stärken Ihre Organisation durch die Bereitstellung eines sicheren und intelligenten  Assistenten, der Ihre Unternehmensdaten in umsetzbare Erkenntnisse umwandelt und so  Effizienz und Innovation mit unerschütterlichen Vertrauen und Datenschutz fördert.',
-                        'sub_title' => ' Speziallösungen für Recht & Medizin',
+                        'title' => 'Speziallösungen für Recht & Medizin',
+                        'description' => 'Unsere Vision ist einfach: Wir gestalten die Zukunft der intelligenten Assistenz.
+Wir entwickeln den führenden KI-gestützten Wissensassistenten, der speziell für Unternehmen konzipiert ist, die höchste Sicherheit und absoluten Datenschutz verlangen. Unser Produkt ist nicht nur ein Assistent – ​​es ist ein proaktiver Partner, der auf Ihren Arbeitsablauf zugeschnitten ist und Ihnen hilft, mithilfe nachvollziehbarer, datenbasierter Erkenntnisse schneller fundierte Entscheidungen zu treffen.',
+                        'sub_title' => 'Warum Sursenda',
                         'sub_description' => 'Unsere junge, energische Herangehensweise bringt eine frische Perspektive in jede  Herausforderung. Wir entwickeln Lösungen, die über die reine Funktionalität hinausgehen,  unser Assistent ist Ihr proaktiver Partner und unverzichtbarer Informationsgeber. Wir nutzen  diesen Enthusiasmus, um Lösungen zu entwickeln, die über die reine Funktionalität  hinausgehen und ein Höchstmass an Intelligenz und Personalisierung bieten. Wir verstehen  unseren Assistenten als proaktiven Partner und unverzichtbaren Informationsgeber.'
                     ],
                 ],
@@ -138,7 +132,7 @@ Unsere Lösung basiert auf zwei zentralen Pfeilern:
                     ],
                     'de' => [
                         'title' => 'Lernen Sie unser Team kennen',
-                        'description' => 'Wir sind ein dynamisches und engagiertes Team, das die gemeinsame Mission hat, den führenden KI-gestützten Wissensassistenten zu entwickeln und dabei vielfältiges Fachwissen von Backend-Engineering bis hin zu Rechts- und Cloud-Technologien einzubringen. '
+                        'description' => 'Wir sind ein dynamisches, spezialisiertes Team, geeint durch das Ziel, einzigartige Lösungen für  unsere Kunden in den Sektoren Recht und Medizin zu entwickeln, deren Bedürfnisse besonders  spezifisch sind.  Jahrelange Erfahrung in verschiedenen Disziplinen schärft unser vielseitiges Know-How. Es ist  der Motor, der es uns ermöglicht, unsere Leidenschaft in jedes Detail einfliessen zu lassen, um  ein Produkt zu liefern, das sich klar abhebt. '
                     ],
                 ],
             ],
@@ -461,7 +455,7 @@ Unsere Lösung basiert auf zwei zentralen Pfeilern:
                     ],
                     'fr' => [
                         'title' => 'Pourquoi Maintenant',
-                        'description' => "Une enquête récente de Thomson Reuters a révélé que les professionnels du droit utilisant des outils d’IA s’attendent à libérer en moyenne près de 240 heures par an.\nCe chiffre représente une opportunité significative pour les avocats de récupérer le temps consacré aux tâches administratives et non facturables, et de se concentrer sur un travail client à plus forte valeur ajoutée."
+                        'description' => "Une récente étude Thomson Reuters révèle que les professionnels du droit utilisant des outils d'IA prévoient de gagner en moyenne près de 240 heures par an. Ce chiffre représente une opportunité significative pour les avocats de gagner du temps consacré aux tâches administratives et non facturables, et de se concentrer sur des missions à plus forte valeur ajoutée pour leurs clients."
                     ],
                     'it' => [
                         'title' => 'Perché adesso',
@@ -469,7 +463,7 @@ Unsere Lösung basiert auf zwei zentralen Pfeilern:
                     ],
                     'de' => [
                         'title' => 'Warum Jetzt',
-                        'description' => "Eine aktuelle Thomson Reuters-Umfrage ergab, dass Rechtsanwender, die KI-Tools einsetzen, im Durchschnitt fast 240 Stunden pro Jahr einsparen.\nDiese Zahl stellt eine bedeutende Gelegenheit für Anwälte dar, die Zeit für administrative und nicht abrechenbare Aufgaben zurückzugewinnen und sich stattdessen auf höherwertige Mandantenarbeit zu konzentrieren."
+                        'description' => "Aktuelle Erhebungen zeigen, dass Fachkräfte in den Bereichen Medizin und Recht jedes Jahr  erhebliche Zeit für Recherchen und Verwaltung aufwenden. Diese gewonnene Zeit ist Ihre  Chance: Befreien Sie sich von administrativen Aufwänden und richten Sie Ihren Fokus wieder  auf das, was wirklich zählt: die tiefe Auseinandersetzung mit dem Fall und die bestmögliche  Behandlung."
                     ]
                 ],
             ],

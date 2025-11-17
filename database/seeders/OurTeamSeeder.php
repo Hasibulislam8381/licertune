@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
 use App\Models\OurTeam;
+use Illuminate\Database\Seeder;
 
 class OurTeamSeeder extends Seeder
 {
@@ -26,19 +26,27 @@ class OurTeamSeeder extends Seeder
                 'translations' => [
                     'en' => [
                         'name' => 'Aschvin Umachandran',
-                        'bio'  => "An accomplished Full-Stack Engineer, Aschvin possesses deep expertise in cutting-edge cloud technologies and Large Language Models (LLMs). His innovative approach keeps our platform at the forefront of AI capabilities, continually enhancing our ability to extract meaningful insights from data.",
+                        'bio' => 'An accomplished Full-Stack Engineer, Aschvin
+                        possesses deep expertise in cutting-edge cloud
+                        technologies and Large Language Models LLMs. His
+                        innovative approach keeps our platform at the
+                        forefront of Al capabilities, continually enhancing
+                        our ability to extract meaningful insights from data.',
                     ],
                     'fr' => [
                         'name' => 'Aschvin Umachandran',
-                        'bio'  => "Ingénieur Full-Stack accompli, Aschvin possède une expertise approfondie des technologies cloud de pointe et des modèles de langage étendus (LLM). Son approche innovante maintient notre plateforme à la pointe des capacités de l’IA, améliorant continuellement notre aptitude à extraire des informations pertinentes à partir des données.",
+                        'bio' => "Ingénieur Full-Stack accompli, Aschvin possède une expertise approfondie des technologies cloud de pointe et des LLM en grands modèles de langage. Son approche innovante maintient notre plateforme à la pointe de l'IA, améliorant continuellement notre capacité à extraire des informations pertinentes des données.",
                     ],
                     'it' => [
                         'name' => 'Aschvin Umachandran',
-                        'bio'  => "Ingegnere Full-Stack di grande esperienza, Aschvin possiede una profonda competenza nelle tecnologie cloud all’avanguardia e nei Large Language Models (LLM). Il suo approccio innovativo mantiene la nostra piattaforma all’avanguardia nelle capacità dell’IA, migliorando costantemente la nostra capacità di estrarre informazioni significative dai dati.",
+                        'bio' => "Aschvin, esperto Full-Stack Engineer, vanta una profonda
+                        esperienza nelle tecnologie cloud all'avanguardia e nei LLM sui Large Language Model. Il suo
+                        approccio innovativo mantiene la nostra piattaforma all'avanguardia nelle capacità di intelligenza artificiale, migliorando costantemente
+                        la nostra capacità di estrarre informazioni significative dai dati.",
                     ],
                     'de' => [
                         'name' => 'Aschvin Umachandran',
-                        'bio'  => "Als erfahrener Full-Stack-Ingenieur verfügt Aschvin über umfassende Expertise in modernen Cloud-Technologien und Large Language Models (LLMs). Sein innovativer Ansatz hält unsere Plattform an der Spitze der KI-Fähigkeiten und verbessert kontinuierlich unsere Fähigkeit, aussagekräftige Erkenntnisse aus Daten zu gewinnen.",
+                        'bio' => 'Als erfahrener Full-Stack-Ingenieur verfügt Aschvin über umfassende Expertise in modernsten Cloud-Technologien und Large Language Models (LLMs). Sein innovativer Ansatz sorgt dafür, dass unsere Plattform immer auf dem neuesten Stand der KI-Fähigkeiten bleibt und verbessert kontinuierlich unsere Fähigkeit, aus Daten aussagekräftige Erkenntnisse zu gewinnen.',
                     ],
                 ],
                 'image' => 'uploads/our_team/team2.jpg',
@@ -47,19 +55,25 @@ class OurTeamSeeder extends Seeder
                 'translations' => [
                     'en' => [
                         'name' => 'Elio Petrini',
-                        'bio'  => "As a Full-Stack Engineer with a unique legal background, Elio brings a critical dual perspective to our operations. His expertise not only drives the technical development of our platforms but also ensures strict adherence to legal frameworks and data compliance, particularly vital given our Swiss hosting.",
+                        'bio' => 'As a Full-Stack Engineer with a unique legal background, Elio brings a critical dual perspective to our operations. His expertise not only drives the technical development of our platforms but also ensures strict adherence to legal frameworks and data compliance, particularly vital given our Swiss hosting.',
                     ],
                     'fr' => [
                         'name' => 'Elio Petrini',
-                        'bio'  => "En tant qu’ingénieur Full-Stack doté d’une formation juridique unique, Elio apporte une double perspective essentielle à nos opérations. Son expertise soutient non seulement le développement technique de nos plateformes, mais garantit également une stricte conformité aux cadres juridiques et aux exigences en matière de protection des données, un aspect particulièrement crucial compte tenu de notre hébergement en Suisse.",
+                        'bio' => 'Als Full-Stack-Ingenieur mit einzigartigem juristischen Hintergrund bringt Elio eine entscheidende Doppelperspektive in unsere Abläufe ein. Seine Expertise treibt nicht nur die technische Entwicklung unserer Plattformen voran, sondern gewährleistet auch die strikte Einhaltung rechtlicher Rahmenbedingungen und die Einhaltung von Datenschutzbestimmungen, was angesichts unseres Schweizer Hostings besonders wichtig ist.',
                     ],
                     'it' => [
                         'name' => 'Elio Petrini',
-                        'bio'  => "Come ingegnere Full-Stack con una formazione giuridica unica, Elio offre una doppia prospettiva fondamentale alle nostre operazioni. La sua competenza guida non solo lo sviluppo tecnico delle nostre piattaforme, ma assicura anche il rigoroso rispetto dei quadri legali e della conformità dei dati, un aspetto particolarmente importante dato il nostro hosting svizzero.",
+                        'bio' => 'In qualità di Full-Stack Engineer con un background legale
+                        esclusivo, Elio apporta una duplice prospettiva critica
+                        alle nostre operazioni. La sua competenza non solo guida lo
+                        sviluppo tecnico delle nostre piattaforme, ma
+                        garantisce anche il rigoroso rispetto dei quadri normativi e
+                        la conformità dei dati, particolarmente vitale dato il nostro hosting
+                        svizzero.',
                     ],
                     'de' => [
                         'name' => 'Elio Petrini',
-                        'bio'  => "Als Full-Stack-Ingenieur mit juristischem Hintergrund bringt Elio eine wertvolle doppelte Perspektive in unsere Arbeit ein. Seine Expertise treibt nicht nur die technische Entwicklung unserer Plattformen voran, sondern gewährleistet auch die strikte Einhaltung rechtlicher Rahmenbedingungen und der Datensicherheit – besonders wichtig angesichts unseres Hostings in der Schweiz.",
+                        'bio' => 'Als Full-Stack-Ingenieur mit juristischem Hintergrund bringt Elio eine wertvolle doppelte Perspektive in unsere Arbeit ein. Seine Expertise treibt nicht nur die technische Entwicklung unserer Plattformen voran, sondern gewährleistet auch die strikte Einhaltung rechtlicher Rahmenbedingungen und der Datensicherheit – besonders wichtig angesichts unseres Hostings in der Schweiz.',
                     ],
                 ],
                 'image' => 'uploads/our_team/team1.jpg',
@@ -67,46 +81,53 @@ class OurTeamSeeder extends Seeder
             [
                 'translations' => [
                     'en' => [
-                        'name' => 'Aschvin Umachandran',
-                        'bio'  => "An accomplished Full-Stack Engineer, Aschvin possesses deep expertise in cutting-edge cloud technologies and Large Language Models (LLMs). His innovative approach keeps our platform at the forefront of AI capabilities, continually enhancing our ability to extract meaningful insights from data.",
+                        'name' => 'Marmot',
+                        'bio' => 'An accomplished Full-Stack Engineer, Aschvin
+                        possesses deep expertise in cutting-edge cloud
+                        technologies and Large Language Models LLMs. His
+                        innovative approach keeps our platform at the
+                        forefront of Al capabilities, continually enhancing
+                        our ability to extract meaningful insights from data.',
                     ],
                     'fr' => [
-                        'name' => 'Aschvin Umachandran',
-                        'bio'  => "Ingénieur Full-Stack accompli, Aschvin possède une expertise approfondie des technologies cloud de pointe et des modèles de langage étendus (LLM). Son approche innovante maintient notre plateforme à la pointe des capacités de l’IA, améliorant continuellement notre aptitude à extraire des informations pertinentes à partir des données.",
+                        'name' => 'Marmot',
+                        'bio' => "Ingénieur Full-Stack accompli, Aschvin possède une expertise approfondie des technologies cloud de pointe et des LLM en grands modèles de langage. Son approche innovante maintient notre plateforme à la pointe de l'IA, améliorant continuellement notre capacité à extraire des informations pertinentes des données.",
                     ],
                     'it' => [
-                        'name' => 'Aschvin Umachandran',
-                        'bio'  => "Ingegnere Full-Stack di grande esperienza, Aschvin possiede una profonda competenza nelle tecnologie cloud all’avanguardia e nei Large Language Models (LLM). Il suo approccio innovativo mantiene la nostra piattaforma all’avanguardia nelle capacità dell’IA, migliorando costantemente la nostra capacità di estrarre informazioni significative dai dati.",
+                        'name' => 'Marmot',
+                        'bio' => "Aschvin, esperto Full-Stack Engineer, vanta una profonda
+                        esperienza nelle tecnologie cloud all'avanguardia e nei LLM sui Large Language Model. Il suo
+                        approccio innovativo mantiene la nostra piattaforma all'avanguardia nelle capacità di intelligenza artificiale, migliorando costantemente
+                        la nostra capacità di estrarre informazioni significative dai dati.",
                     ],
                     'de' => [
-                        'name' => 'Aschvin Umachandran',
-                        'bio'  => "Als erfahrener Full-Stack-Ingenieur verfügt Aschvin über umfassende Expertise in modernen Cloud-Technologien und Large Language Models (LLMs). Sein innovativer Ansatz hält unsere Plattform an der Spitze der KI-Fähigkeiten und verbessert kontinuierlich unsere Fähigkeit, aussagekräftige Erkenntnisse aus Daten zu gewinnen.",
+                        'name' => 'Marmot',
+                        'bio' => 'Wir freuen uns, bald ein neues Teammitglied begrüssen zu dürfen, das unser Know-how in der  Kundenintegration signifikant verstärken wird. Diese Person bringt umfassendes Wissen und  langjährige Erfahrung in den Bereichen Projektmanagement, Systems Engineering und  Networking mit. Damit ist sie die ideale Besetzung, um unsere Kunden bei der erfolgreichen  Integration komplexer Projekte zu unterstützen und selbst in anspruchsvollen, heterogenen  Umgebungen stets die optimale Lösung zu gewährleisten.',
                     ],
                 ],
                 'image' => 'uploads/our_team/team4.jpg',
             ],
-
         ];
 
         $languages = ['en', 'fr', 'it', 'de'];
 
         foreach ($members as $member) {
             $team = OurTeam::create([
-                'image'  => $member['image'],
+                'image' => $member['image'],
                 'status' => 'active',
             ]);
 
             foreach ($languages as $lang) {
                 $team->translations()->create([
                     'language' => $lang,
-                    'field'    => 'name',
-                    'value'    => $member['translations'][$lang]['name'],
+                    'field' => 'name',
+                    'value' => $member['translations'][$lang]['name'],
                 ]);
 
                 $team->translations()->create([
                     'language' => $lang,
-                    'field'    => 'bio',
-                    'value'    => $member['translations'][$lang]['bio'],
+                    'field' => 'bio',
+                    'value' => $member['translations'][$lang]['bio'],
                 ]);
             }
         }

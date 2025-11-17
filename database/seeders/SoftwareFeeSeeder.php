@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
 use App\Models\SoftwareFee;
+use Illuminate\Database\Seeder;
 
 class SoftwareFeeSeeder extends Seeder
 {
@@ -27,15 +27,15 @@ class SoftwareFeeSeeder extends Seeder
             ],
             'fr' => [
                 'title' => 'Par utilisateur, par mois',
-                'description' => "Frais fixes pour l'ensemble du site garantissant une budgétisation prévisible pour votre organisation.\n1. Accès complet à toutes les fonctionnalités du logiciel\n2. Mises à jour et améliorations régulières\n3. Support client dédié"
+                'description' => "Forfait à l'échelle du site garantissant une budgétisation prévisible pour votre organisation."
             ],
             'it' => [
                 'title' => 'Per utente, al mese',
-                'description' => "Tariffa flat a livello del sito che garantisce un budget prevedibile per la tua organizzazione.\n1. Accesso completo a tutte le funzionalità del software\n2. Aggiornamenti e miglioramenti regolari\n3. Supporto clienti dedicato"
+                'description' => "Canone fisso per l'intero sito, che garantisce un budget prevedibile per la tua organizzazione."
             ],
             'de' => [
                 'title' => 'Pro Benutzer, pro Monat',
-                'description' => "Siteweite Pauschale für eine planbare Budgetierung Ihrer Organisation.\n1. Voller Zugriff auf alle Softwarefunktionen\n2. Regelmäßige Updates und Verbesserungen\n3. Dedizierter Kundensupport"
+                'description' => 'Eine standortweite Pauschalgebühr gewährleistet eine vorhersehbare Budgetierung für Ihr Unternehmen.'
             ],
         ];
 
@@ -69,16 +69,16 @@ class SoftwareFeeSeeder extends Seeder
                 'description' => "One-off set-up fee for new customers.\n1. Full access to all software features\n2. Regular updates and improvements\n3. Dedicated customer support"
             ],
             'fr' => [
-                'title' => 'Frais d\'installation unique',
-                'description' => "Frais unique d'installation pour les nouveaux clients.\n1. Accès complet à toutes les fonctionnalités du logiciel\n2. Mises à jour et améliorations régulières\n3. Support client dédié"
+                'title' => 'One-time setup fee',
+                'description' => 'Costo di attivazione una tantum per i nuovi clienti.'
             ],
             'it' => [
-                'title' => 'Tariffa di configurazione una tantum',
+                'title' => 'Costo di installazione una tantum',
                 'description' => "Tariffa di configurazione una tantum per i nuovi clienti.\n1. Accesso completo a tutte le funzionalità del software\n2. Aggiornamenti e miglioramenti regolari\n3. Supporto clienti dedicato"
             ],
             'de' => [
-                'title' => 'Einrichtungsgebühr einmalig',
-                'description' => "Einmalige Einrichtungsgebühr für Neukunden.\n1. Voller Zugriff auf alle Softwarefunktionen\n2. Regelmäßige Updates und Verbesserungen\n3. Dedizierter Kundensupport"
+                'title' => 'Einmalige Einrichtungsgebühr',
+                'description' => 'Einmalige Einrichtungsgebühr für Neukunden.'
             ],
         ];
 

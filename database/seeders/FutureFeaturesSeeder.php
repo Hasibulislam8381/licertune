@@ -24,16 +24,16 @@ class FutureFeaturesSeeder extends Seeder
                 'features' => 'Granular user & role management, Custom policies. Compliance & audit features, Analytics dashboard usage and performance, Enterprise-grade scalability and governance',
             ],
             'fr' => [
-                'title' => 'Fonctionnalités Futures : Administration Avancée',
-                'features' => 'Gestion granulaire des utilisateurs et des rôles. Politiques personnalisées, Fonctions de conformité et d’audit, Tableau de bord analytique sur l’utilisation et les performances, Gouvernance et évolutivité de niveau entreprise',
+                'title' => 'Fonctionnalités futures : Administration avancée',
+                'features' => "Gestion granulaire des utilisateurs et des rôles , Politiques personnalisées. Fonctionnalités de conformité et d'audit , Utilisation et performances du tableau de bord d'analyse , Évolutivité et gouvernance de niveau entreprise ",
             ],
             'it' => [
-                'title' => 'Funzionalità Future: Amministrazione Avanzata',
-                'features' => 'Gestione granulare di utenti e ruoli, Politiche personalizzate. Funzionalità di conformità e audit, Dashboard analitica su utilizzo e prestazioni, Scalabilità e governance di livello enterprise',
+                'title' => 'Funzionalità future: amministrazione avanzata',
+                'features' => 'Gestione granulare di utenti e ruoli, Criteri personalizzati, funzionalità di conformità e audit ,Utilizzo e prestazioni della dashboard di analisi ,Scalabilità e governance di livello aziendale',
             ],
             'de' => [
                 'title' => 'Zukünftige Funktionen: Erweiterte Verwaltung',
-                'features' => 'Granulare Benutzer- und Rollenverwaltung, Benutzerdefinierte Richtlinien. Compliance- und Auditfunktionen, Analyse-Dashboard für Nutzung und Leistung, Unternehmensweite Skalierbarkeit und Governance',
+                'features' => 'Granulare Benutzer- und Rollenverwaltung , Benutzerdefinierte Richtlinien, Compliance- und Auditfunktionen , Nutzung und Leistung des Analytics-Dashboards , Skalierbarkeit und Governance auf Unternehmensniveau',
             ],
         ];
 

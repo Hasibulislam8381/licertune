@@ -22,19 +22,19 @@ class BrandCampSeeder extends Seeder
                         'description' => 'Sursenda GmbH pioneers intelligent assistance — empowering organizations with a secure, private, and high-performance AI knowledge assistant.',
                     ],
                     'fr' => [
-                        'title' => 'Votre savoir sécurisé. Vos interactions, révolutionnées.',
+                        'title' => 'Vos connaissances sécurisées. Vos interactions révolutionnées.',
                         'subtitle' => 'Autonomiser les organisations',
-                        'description' => 'Sursenda GmbH est à la pointe de l’assistance intelligente — offrant aux organisations un assistant de connaissance IA sécurisé, privé et performant.',
+                        'description' => "Sursenda GmbH est le pionnier de l'assistance intelligente, offrant aux organisations un assistant de connaissances IA sécurisé, privé et hautes performances.",
                     ],
                     'it' => [
-                        'title' => 'La tua conoscenza protetta. Le tue interazioni, rivoluzionate.',
+                        'title' => 'La tua conoscenza è al sicuro. Le tue interazioni sono rivoluzionate.',
                         'subtitle' => 'Potenziare le organizzazioni',
-                        'description' => 'Sursenda GmbH guida l’assistenza intelligente — potenziando le organizzazioni con un assistente di conoscenza AI sicuro, privato e ad alte prestazioni.',
+                        'description' => "Sursenda GmbH è pioniera nell'assistenza intelligente, offrendo alle organizzazioni un assistente IA sicuro, privato e ad alte prestazioni.",
                     ],
                     'de' => [
                         'title' => 'Ihr Wissen gesichert. Ihre Interaktionen, revolutioniert.',
                         'subtitle' => 'Organisationen befähigen',
-                        'description' => 'Sursenda GmbH setzt Maßstäbe in intelligenter Unterstützung — und befähigt Organisationen mit einem sicheren, privaten und leistungsstarken KI-Wissensassistenten.',
+                        'description' => 'Als Pionier für intelligente Assistenz  entwickeln wir den führenden, KI-gestützten  Wissensassistenten. Er wurde von Grund auf  für Unternehmen konzipiert, die höchste  Ansprüche an absolute Datensicherheit und  vertrauliche Wissensnutzung stellen.',
                     ],
                 ],
             ],
@@ -66,7 +66,7 @@ class BrandCampSeeder extends Seeder
                 'image' => 'uploads/brandcamp/pricing_brad.jpg',
                 'translations' => [
                     'en' => ['title' => 'Pricing'],
-                    'fr' => ['title' => 'Tarification'],
+                    'fr' => ['title' => 'Tarifs'],
                     'it' => ['title' => 'Prezzi'],
                     'de' => ['title' => 'Preise'],
                 ],
@@ -79,7 +79,7 @@ class BrandCampSeeder extends Seeder
                     'en' => ['title' => 'Our Product'],
                     'fr' => ['title' => 'Notre produit'],
                     'it' => ['title' => 'Il nostro prodotto'],
-                    'de' => ['title' => 'Unser Produkt'],
+                    'de' => ['title' => 'Unsere Produkte'],
                 ],
             ],
 
